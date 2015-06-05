@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
+    <title>Cookie policy - fbbdev.io</title>
+    <link href="css/cookie.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700|Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+    <script src="js/cookie.js"></script>
+    <script src="js/svg.min.js"></script>
+    <script src="js/perlin.js"></script>
+    <script src="js/background.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        getCookieConsent(document.querySelector('.cookie-banner'), ".fbbdev.io");
+
+        noise.seed(12456);
+        var bg = SVG(document.querySelector('#page-header .background'));
+        drawBackground(bg, Math.max(screen.width, screen.height), 50);
+
+        noise.seed(12456);
+        bg = SVG(document.querySelector('#content-header .background'));
+        drawBackground(bg, Math.max(screen.width, screen.height), 200);
+      });
+    </script>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Cantarell', sans-serif;
+        background-color: #fff;
+      }
+
+      .background {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: -100;
+      }
+
+      header {
+        position: fixed;
+
+        left: 0;
+        right: 0;
+
+        padding: 0 10px;
+
+        font-weight: 700;
+        color: #fff;
+      }
+
+      #page-header {
+        top: 0;
+        z-index: 50;
+
+        height: 50px;
+        line-height: 50px;
+
+        background: #00d470;
+
+        font-size: 30px;
+        text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+      }
+
+      #page-header a:link, header a:active, header a:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      #content-header {
+        top: 50px;
+        z-index: -100;
+
+        height: 150px;
+        line-height: 150px;
+
+        background: #00d470;
+        background: -moz-linear-gradient(top,  #00d470 0%, #e8fa73 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00d470), color-stop(100%,#e8fa73));
+        background: -webkit-linear-gradient(top,  #00d470 0%,#e8fa73 100%);
+        background: -o-linear-gradient(top,  #00d470 0%,#e8fa73 100%);
+        background: -ms-linear-gradient(top,  #00d470 0%,#e8fa73 100%);
+        background: linear-gradient(to bottom,  #00d470 0%,#e8fa73 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d470', endColorstr='#e8fa73',GradientType=0);
+
+        text-align: center;
+        font-size: 64px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+      }
+
+      #content-header .background {
+        top: -50px;
+      }
+
+      main {
+        margin-top: 200px;
+        padding: 40px;
+        background-color: #fff;
+        font-family: 'Source Sans Pro';
+        box-shadow: 0 -4px 8px 4px rgba(0, 0, 0, .2);
+      }
+
+      main section {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        max-width: 600px;
+        text-align: justify;
+      }
+
+      main section h1 {
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 2em;
+        font-family: 'Cantarell';
+      }
+
+      main section p {
+        margin: 0;
+        margin-bottom: 20px;
+        line-height: 2;
+      }
+
+      a.browser-help:link,
+      a.browser-help:active,
+      a.browser-help:visited {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100px;
+        vertical-align: top;
+        text-align: center;
+        line-height: 1;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+      }
+
+      .browser-help img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 48px;
+        height: 48px;
+      }
+
+      @media (max-width: 479px) {
+        #page-header {
+          font-size: 20px;
+        }
+
+        #content-header {
+          font-size: 40px;
+        }
+      }
+
+      @media (max-height: 480px) {
+        #page-header {
+          font-size: 20px;
+        }
+
+        #content-header {
+          height: 80px;
+          line-height: 80px;
+          font-size: 40px;
+        }
+
+        main {
+          margin-top: 130px;
+          box-shadow: 0 -2px 4px 2px rgba(0, 0, 0, .2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cookie-banner" style="font-family: 'Source Sans Pro', sans-serif;">
+      This website is using cookies.
+      <span class="cookie-consent">
+        By continuing to use our website you agree to our use of cookies.
+      </span>
+      <a href="cookies.html">Learn more</a>
+      <a class="confirm" href="#" style="margin-left: 10px;">Got it</a>
+    </div>
+    <header id="page-header">
+      <div class="background"></div>
+      <a href="/">fbbdev.io</a>
+    </header>
+    <header id="content-header">
+      <div class="background"></div>
+      Cookie policy
+    </header>
+    <main>
+      <section>
+        <h1>What are cookies?</h1>
+        <p>
+          Cookies are small strings of text stored on your device when you visit
+          a website. They enable the website to remember your actions and
+          preferences (such as login, language, font size and other display
+          preferences) over a period of time, so you don’t have to keep
+          re-entering them whenever you come back to the site or browse
+          from one page to another.
+        </p>
+        <p>
+
+        </p>
+      </section>
+      <section>
+        <h1>Our cookies</h1>
+        <p>
+          This website uses two technical cookies.
+        </p>
+      </section>
+      <section>
+        <h1>How to manage cookies</h1>
+        <p>
+          You can control and/or delete cookies as you wish. You can delete all
+          cookies that are already on your computer and you can set most browsers
+          to prevent them from being placed. If you do this, however, you may have
+          to manually adjust some preferences every time you visit a site and some
+          services and functionalities may not work.
+        </p>
+        <p>
+          Most modern browsers also provide &ldquo;private navigation&rdquo; or
+          &ldquo;private windows&rdquo;. This feature temporarily disables all
+          cookies and allows you to navigate web sites without being tracked.
+        </p>
+        <p>
+          Here are links to manual pages for common browsers:
+        </p>
+        <p style="margin: 0 auto; max-width: 450px; text-align: center;">
+          <a class="browser-help" target="_blank" href="https://support.mozilla.org/products/firefox/protect-your-privacy">
+            <img src="img/browsers/firefox.png" width="48" height="48">
+            Firefox
+          </a>
+          <a class="browser-help" target="_blank" href="https://support.mozilla.org/products/mobile/protect-your-privacy-firefox-android">
+            <img src="img/browsers/firefox.png" width="48" height="48">
+            Firefox for Android
+          </a>
+          <a class="browser-help" target="_blank" href="https://support.google.com/chrome/answer/95647">
+            <img src="img/browsers/chrome.png" width="48" height="48">
+            Chrome
+          </a>
+          <a class="browser-help" target="_blank" href="https://support.google.com/chrome/answer/2392971">
+            <img src="img/browsers/chrome-android.png" width="48" height="48">
+            Chrome for mobile
+          </a>
+          <a class="browser-help" target="_blank" href="http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies">
+            <img src="img/browsers/explorer.png" width="48" height="48">
+            Internet Explorer
+          </a>
+          <a class="browser-help" target="_blank" href="https://support.apple.com/kb/PH19214">
+            <img src="img/browsers/safari.png" width="48" height="48">
+            Safari
+          </a>
+          <a class="browser-help" target="_blank" href="https://support.apple.com/HT201265">
+            <img src="img/browsers/safari-ios.png" width="48" height="48">
+            Safari for iOS
+          </a>
+          <a class="browser-help" target="_blank" href="http://help.opera.com/">
+            <img src="img/browsers/opera.png" width="48" height="48">
+            Opera
+          </a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
