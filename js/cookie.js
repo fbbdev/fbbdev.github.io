@@ -20,10 +20,16 @@
     var confirmed = getCookie();
 
     if (confirmed) {
-      onConfirm(banner);
+      if (onConfirm) {
+        onConfirm(banner);
+      }
+
       return;
     } else if (confirmed === false) {
-      onDeny(banner);
+      if (onDeny) {
+        onDeny(banner);
+      }
+
       return;
     }
 
