@@ -1,0 +1,34 @@
+---
+---
+
+@import 'fonts';
+@import 'theme';
+@import 'cookie-banner';
+
+.logo {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 50;
+
+  padding: 0 10px;
+
+  height: $page-header-height;
+  line-height: $page-header-height;
+
+  background: transparent;
+
+  font-family: $header-font;
+  font-size: $page-header-height - 20px;
+  font-weight: bold;
+  color: $header-color;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+
+  a:link, a:active, a:visited {
+    color: $header-color;
+    text-decoration: none;
+  }
+}
