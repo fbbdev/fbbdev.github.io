@@ -20,12 +20,16 @@
     var confirmed = getCookie();
 
     if (confirmed) {
+      banner.style.display = "none";
+
       if (onConfirm) {
         onConfirm(banner);
       }
 
       return;
     } else if (confirmed === false) {
+      banner.style.display = "none";
+
       if (onDeny) {
         onDeny(banner);
       }
@@ -68,5 +72,7 @@
         }
       });
     }
+
+    banner.style.display = "block";
   };
 }(window));
