@@ -45,7 +45,7 @@
         ev.preventDefault();
 
         setCookie(domain, true);
-        banner.style.display = "";
+        banner.style.display = "none";
 
         if (onConfirm) {
           onConfirm(banner);
@@ -61,14 +61,12 @@
         ev.preventDefault();
 
         setCookie(domain, false);
-        banner.style.display = "";
+        banner.style.display = "none";
 
         if (onDeny) {
           onDeny(banner);
         }
       });
     }
-
-    banner.style.display = "block";
   };
 }(window));

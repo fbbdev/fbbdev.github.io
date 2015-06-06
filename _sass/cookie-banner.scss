@@ -23,7 +23,6 @@
 
 .cookie-banner {
   @include cookie-banner-shape($cookie-banner-location, $cookie-banner-height);
-  display: none;
 
   background-color: $cookie-banner-bg;
 
