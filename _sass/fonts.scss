@@ -1,0 +1,9 @@
+@import 'font-face';
+
+@include font-face(Cantarell, '../fonts/Cantarell-Regular', normal, normal);
+@include font-face(Cantarell, '../fonts/Cantarell-Bold', bold, normal);
+
+@include font-face(Lato, '../fonts/Lato-Regular', normal, normal);
+@include font-face(Lato, '../fonts/Lato-Italic', normal, italic);
+@include font-face(Lato, '../fonts/Lato-Bold', bold, normal);
+@include font-face(Lato, '../fonts/Lato-BoldItalic', bold, italic);

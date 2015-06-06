@@ -1,0 +1,67 @@
+@mixin cookie-banner-shape($location: bottom, $height: 30px, $z: 100, $padding: 0 20px) {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+
+  @if $location == top {
+    top: 0;
+  }
+  @else if $location == bottom {
+    bottom: 0;
+  }
+
+  z-index: $z;
+
+  padding: $padding;
+
+  min-height: $height;
+  line-height: $height;
+
+  font-size: $height/2;
+}
+
+.cookie-banner {
+  @include cookie-banner-shape($cookie-banner-location, $cookie-banner-height);
+  display: none;
+
+  background-color: $cookie-banner-bg;
+
+  text-align: $cookie-banner-align;
+
+  color: $cookie-banner-color;
+
+  a:link,
+  a:active,
+  a:visited,
+  a:hover {
+    color: $cookie-banner-color;
+  }
+
+  a.confirm:link,
+  a.confirm:active,
+  a.confirm:visited,
+  a.deny:link,
+  a.deny:active,
+  a.deny:visited {
+    display: inline-block;
+
+    background-color: darken($cookie-banner-bg, 20%);
+
+    border-radius: 4px;
+
+    padding: 0 5px;
+
+    height: $cookie-banner-height - 8px;
+    line-height: $cookie-banner-height - 8px;
+
+    font-weight: bold;
+    text-decoration: none;
+    color: $cookie-banner-color;
+  }
+
+  a.confirm:hover,
+  a.deny:hover {
+    background-color: darken($cookie-banner-bg, 15%);
+  }
+}

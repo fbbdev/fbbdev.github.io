@@ -1,0 +1,15 @@
+@import 'fonts';
+
+@import 'theme';
+@import 'background';
+
+body {
+  margin: 0;
+
+  background: $bg;
+
+  font-family: $body-font;
+  color: $body-color;
+}
+
+@import 'cookie-banner';

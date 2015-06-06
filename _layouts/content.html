@@ -1,0 +1,19 @@
+---
+layout: base
+stylesheet: content
+backgrounds:
+  - { selector: '#page-header .background', width: 'Math.max(screen.width, screen.height)', height: 50 }
+  - { selector: '#content-header .background', width: 'Math.max(screen.width, screen.height)', height: 200 }
+---
+
+<header id="page-header">
+  <div class="background"></div>
+  <a href="/">{{ site.name }}</a>
+</header>
+<header id="content-header">
+  <div class="background"></div>
+  {{ page.title }}
+</header>
+<main>
+  {{ content }}
+</main>

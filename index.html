@@ -1,138 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1">
-    <title>fbbdev.io</title>
-    <link href="css/cookie.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,700|Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
-    <script src="js/cookie.js"></script>
-    <script src="js/svg.min.js"></script>
-    <script src="js/perlin.js"></script>
-    <script src="js/background.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        getCookieConsent(document.querySelector('.cookie-banner'), ".fbbdev.io");
+---
+layout: base
+stylesheet: index
+backgrounds:
+  - { selector: '#background', width: 'Math.max(screen.width, screen.height)' }
+---
 
-        noise.seed(12456);
-        var bg = SVG('background');
-        drawBackground(bg, Math.max(screen.width, screen.height));
-      });
-    </script>
-    <style>
-      html {
-        width: 100%;
-        height: 100%;
-      }
-
-      body {
-        display: table;
-        margin: 0;
-
-        width: 100%;
-        height: 100%;
-
-        font-family: 'Source Sans Pro', sans-serif;
-      }
-
-      #background {
-        display: table-cell;
-        position: fixed;
-
-        top: 0;
-        left: 0;
-        z-index: -100;
-
-        width: 100%;
-        height: 100%;
-
-        background: #00d470;
-        background: -moz-linear-gradient(top,  #00d470 0%, #e8fa73 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00d470), color-stop(100%,#e8fa73));
-        background: -webkit-linear-gradient(top,  #00d470 0%,#e8fa73 100%);
-        background: -o-linear-gradient(top,  #00d470 0%,#e8fa73 100%);
-        background: -ms-linear-gradient(top,  #00d470 0%,#e8fa73 100%);
-        background: linear-gradient(to bottom,  #00d470 0%,#e8fa73 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00d470', endColorstr='#e8fa73',GradientType=0);
-
-        text-align: center;
-        vertical-align: middle;
-      }
-
-      main {
-        display: table-cell;
-
-        width: 100%;
-        height: 100%;
-
-        text-align: center;
-        vertical-align: middle;
-
-        font-family: 'Cantarell', sans-serif;
-        color: #fff;
-      }
-
-      @media (max-width: 479px) {
-        main {
-          font-size: .6em;
-        }
-      }
-
-      h1 {
-        margin: 0;
-
-        font-size: 6em;
-        font-weight: 700;
-        text-shadow: 2px 2px 4px rgba(0,0,0,.4);
-      }
-
-      h2 {
-        margin: 0;
-
-        font-size: 2em;
-        font-weight: 400;
-        text-shadow: 2px 2px 2px rgba(0,0,0,.4);
-      }
-
-      footer {
-        position: fixed;
-
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        min-height: 30px;
-        padding: 0 20px;
-
-        text-align: center;
-        line-height: 30px;
-
-        font-size: 15px;
-        color: #777;
-      }
-
-      footer a:link,
-      footer a:active,
-      footer a:visited {
-        color: #777;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="cookie-banner">
-      This website is using cookies.
-      By continuing to use our website you agree to our use of cookies.
-      <a href="cookies.html">Learn more</a>
-      <a class="confirm" href="#" style="margin-left: 10px;">Got it</a>
-    </div>
-    <div id="background"></div>
-    <main>
-      <h1>fbbdev.io</h1>
-      <h2>Work in progress</h2>
-    </main>
-    <footer>
-      <a href="mp4analyzer.js">mp4analyzer.js</a> <b>&middot;</b>
-      <a href="cookies.html">Cookie policy</a>
-    </footer>
-  </body>
-</html>
+<div id="background"></div>
+<main>
+  <h1>fbbdev.io</h1>
+  <h2>Work in progress</h2>
+</main>
+<footer>
+  <a href="mp4analyzer.js">mp4analyzer.js</a> <b>&middot;</b>
+  <a href="cookies.html">Cookie policy</a>
+</footer>

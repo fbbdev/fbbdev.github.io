@@ -1,0 +1,117 @@
+---
+---
+
+@import 'base';
+
+header {
+  position: fixed;
+
+  left: 0;
+  right: 0;
+
+  padding: 0 10px;
+
+  font-family: $header-font;
+  font-weight: bold;
+  color: $header-color;
+
+  a:link, a:active, a:visited {
+    color: $header-color;
+    text-decoration: none;
+  }
+}
+
+#page-header {
+  top: 0;
+  z-index: 50;
+
+  height: $page-header-height;
+  line-height: $page-header-height;
+
+  background: $bg-top;
+
+  font-size: $page-header-height - 20px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+}
+
+#content-header {
+  top: $page-header-height;
+  z-index: -100;
+
+  height: $content-header-height;
+  line-height: $content-header-height;
+
+  @include background-gradient(0%, $bg-top, $bg-bottom);
+
+  text-align: center;
+  font-size: $content-header-height - 85px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.4);
+
+  .background {
+    top: -$page-header-height;
+  }
+}
+
+main {
+  margin-top: $page-header-height + $content-header-height;
+  padding: 40px;
+  background-color: $bg;
+  box-shadow: 0 -4px 8px 4px rgba(0, 0, 0, .2);
+
+  section {
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+    max-width: 600px;
+
+    text-align: justify;
+  }
+
+  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-weight: normal;
+    font-size: 2em;
+    font-family: $header-font;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+
+    line-height: 2;
+  }
+}
+
+@media (max-width: 479px) {
+  #page-header {
+    font-size: $page-header-height - 30px;
+  }
+
+  #content-header {
+    font-size: $content-header-height - 110px;
+  }
+}
+
+@media (max-height: 500px) {
+  #page-header {
+    font-size: $page-header-height - 30px;
+  }
+
+  #content-header {
+    height: $content-header-height - 70px;
+
+    line-height: 80px;
+
+    font-size: $content-header-height - 110px;
+  }
+
+  main {
+    margin-top: $page-header-height + $content-header-height - 70px;
+
+    box-shadow: 0 -2px 4px 2px rgba(0, 0, 0, .2);
+  }
+}
