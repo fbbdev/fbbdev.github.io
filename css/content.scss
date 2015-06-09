@@ -55,6 +55,9 @@ header {
 main {
   margin-top: $page-header-height + $content-header-height;
   padding: 40px;
+
+  min-height: 100vh;
+
   background-color: $bg;
   box-shadow: 0 -4px 8px 4px rgba(0, 0, 0, .2);
 
@@ -67,15 +70,17 @@ main {
     text-align: justify;
   }
 
-  h1 {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font;
     margin: 0;
     margin-bottom: 20px;
+  }
 
+  h1 {
     text-align: center;
 
     font-weight: normal;
     font-size: 2em;
-    font-family: $header-font;
   }
 
   p {
@@ -83,6 +88,41 @@ main {
     margin-bottom: 20px;
 
     line-height: 2;
+  }
+}
+
+footer {
+  padding: 20px 40px;
+
+  background-color: $footer-bg;
+
+  text-align: center;
+  color: $footer-color;
+
+  a:link,
+  a:active,
+  a:visited {
+    color: $footer-color;
+    text-decoration: $footer-link-decoration;
+  }
+
+  a:hover {
+    color: $footer-color-hover;
+  }
+
+  .dot {
+    display: inline-block;
+
+    margin: 0 10px;
+
+    vertical-align: top;
+
+    font-weight: bold;
+
+  }
+
+  .dot:before {
+    content: '\b7';
   }
 }
 

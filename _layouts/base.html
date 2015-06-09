@@ -22,6 +22,8 @@
     <script src="js/bundle.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
+        "use strict";
+
         getCookieConsent(document.querySelector('.cookie-banner'), ".{{ site.domain }}");
 
         {% for background in page.backgrounds %}

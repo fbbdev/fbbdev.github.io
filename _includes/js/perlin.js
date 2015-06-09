@@ -15,12 +15,14 @@
  */
 
 (function(global){
+  "use strict";
+
   var module = global.noise = {};
 
   function Grad(x, y, z) {
     this.x = x; this.y = y; this.z = z;
   }
-  
+
   Grad.prototype.dot2 = function(x, y) {
     return this.x*x + this.y*y;
   };

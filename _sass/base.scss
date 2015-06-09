@@ -12,4 +12,15 @@ body {
   color: $body-color;
 }
 
+a:link,
+a:active,
+a:visited {
+  color: $link-color;
+  text-decoration: $link-decoration;
+}
+
+a:hover {
+  color: $link-color-hover
+}
+
 @import 'cookie-banner';

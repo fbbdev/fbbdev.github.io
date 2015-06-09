@@ -1,4 +1,6 @@
 (function(exports) {
+  "use strict";
+
   exports.drawBackground = function(bg, width, height) {
     if (height === undefined) {
       height = width;
