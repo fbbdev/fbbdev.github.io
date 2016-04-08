@@ -1,8 +1,8 @@
-domain: fbbdev.io
+domain: fbbdev.it
 
-name: fbbdev.io
+name: fbbdev.it
 author: Fabio Massaioli (fbbdev)
-description: fbbdev.io is my personal website where I publish projects and make experiments in web development.
+description: fbbdev.it is my personal website where I publish projects and make experiments in web development.
 
 sass:
     style: :compressed
