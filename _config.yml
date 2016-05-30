@@ -2,7 +2,7 @@ domain: fbbdev.it
 
 name: fbbdev.it
 author: Fabio Massaioli (fbbdev)
-description: fbbdev.it is my personal website where I publish projects and make experiments in web development.
+description: fbbdev.it is the place for everything crossing my mind
 
 sass:
     style: :compressed
