@@ -13,6 +13,10 @@
       <link href="css/{{ page.stylesheet }}.css" rel="stylesheet" type="text/css">
     {% endif %}
 
+    {% if layout.stylesheet %}
+      <link href="css/{{ layout.stylesheet }}.css" rel="stylesheet" type="text/css">
+    {% endif %}
+
     {% if page.style %}
       <style>
         {{ page.style }}
@@ -27,6 +31,16 @@
         getCookieConsent(document.querySelector('.cookie-banner'), ".{{ site.domain }}");
 
         {% for background in page.backgrounds %}
+          noise.seed(12456);
+          var bg = SVG(document.querySelector('{{ background.selector }}'));
+          {% if background.height %}
+            drawBackground(bg, {{ background.width }}, {{ background.height }});
+          {% else %}
+            drawBackground(bg, {{ background.width }});
+          {% endif %}
+        {% endfor %}
+
+        {% for background in layout.backgrounds %}
           noise.seed(12456);
           var bg = SVG(document.querySelector('{{ background.selector }}'));
           {% if background.height %}
