@@ -6,3 +6,6 @@ description: fbbdev.it is the place for everything crossing my mind
 
 sass:
     style: :compressed
+
+# gem:
+#    - octopress-debugger
