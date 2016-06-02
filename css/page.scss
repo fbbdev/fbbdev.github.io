@@ -1,0 +1,62 @@
+---
+---
+
+@import 'base';
+
+body > header:first-of-type {
+    position: fixed;
+    width: 100vw;
+
+    color: $header-color;
+
+    font-family: $header-font;
+    font-weight: $header-weight;
+
+    font-size: $page-header-font-size;
+}
+
+main {
+    &.content {
+        & > header:first-of-type {
+            text-align: center;
+
+            padding: $text-header-padding;
+
+            color: $header-color;
+
+            font-family: $header-font;
+            font-weight: $header-weight;
+            font-size: $text-header-font-size;
+        }
+
+        section {
+            margin: 0 auto;
+            padding-bottom: $par-spacing;
+
+            max-width: $text-width;
+
+            text-align: justify;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: $header-font;
+            font-weight: $header-weight;
+
+            margin: 0;
+            margin-bottom: $par-spacing;
+        }
+
+        h1 {
+            text-align: center;
+
+            font-size: 2em;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: $par-spacing;
+
+            line-height: 1.8;
+        }
+    }
+}

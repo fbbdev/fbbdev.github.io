@@ -1,0 +1,6 @@
+@mixin circle($color: $header-color) {
+    border: 1px solid $color;
+    border-radius: 100%;
+
+    text-align: center;
+}

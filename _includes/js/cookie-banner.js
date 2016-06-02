@@ -1,78 +1,78 @@
 (function(exports) {
-  "use strict";
+    "use strict";
 
-  function getCookie() {
-    var cookie = document.cookie.replace(/(?:(?:^|.*;\s* )cookie-consent\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-    if (cookie === "false") {
-      return false;
-    } else if (cookie === "true") {
-      return true;
-    } else {
-      return undefined;
-    }
-  }
-
-  function setCookie(domain, value) {
-    document.cookie = "cookie-consent=" + value.toString() + "; domain=" + domain + "; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  }
-
-  exports.getCookieConsent = function(banner, domain, onAsk, onConfirm, onDeny) {
-    var confirmed = getCookie();
-
-    if (confirmed) {
-      banner.style.display = "none";
-
-      if (onConfirm) {
-        onConfirm(banner);
-      }
-
-      return;
-    } else if (confirmed === false) {
-      banner.style.display = "none";
-
-      if (onDeny) {
-        onDeny(banner);
-      }
-
-      return;
-    }
-
-    if (onAsk) {
-      onAsk(banner);
-    }
-
-    var btn = banner.querySelector('a.confirm');
-
-    if (btn) {
-      btn.addEventListener('click', function(ev) {
-        ev.stopPropagation();
-        ev.preventDefault();
-
-        setCookie(domain, true);
-        banner.style.display = "none";
-
-        if (onConfirm) {
-          onConfirm(banner);
+    function getCookie() {
+        var cookie = document.cookie.replace(/(?:(?:^|.*;\s* )cookie-consent\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        if (cookie === "false") {
+            return false;
+        } else if (cookie === "true") {
+            return true;
+        } else {
+            return undefined;
         }
-      });
     }
 
-    btn = banner.querySelector('a.deny');
+    function setCookie(domain, value) {
+        document.cookie = "cookie-consent=" + value.toString() + "; domain=" + domain + "; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    }
 
-    if (btn) {
-      btn.addEventListener('click', function(ev) {
-        ev.stopPropagation();
-        ev.preventDefault();
+    exports.getCookieConsent = function(banner, domain, onAsk, onConfirm, onDeny) {
+        var confirmed = getCookie();
 
-        setCookie(domain, false);
-        banner.style.display = "none";
+        if (confirmed) {
+            banner.style.display = "none";
 
-        if (onDeny) {
-          onDeny(banner);
+            if (onConfirm) {
+                onConfirm(banner);
+            }
+
+            return;
+        } else if (confirmed === false) {
+            banner.style.display = "none";
+
+            if (onDeny) {
+                onDeny(banner);
+            }
+
+            return;
         }
-      });
-    }
 
-    banner.style.display = "block";
-  };
+        if (onAsk) {
+            onAsk(banner);
+        }
+
+        var btn = banner.querySelector('a.confirm');
+
+        if (btn) {
+            btn.addEventListener('click', function(ev) {
+                ev.stopPropagation();
+                ev.preventDefault();
+
+                setCookie(domain, true);
+                banner.style.display = "none";
+
+                if (onConfirm) {
+                    onConfirm(banner);
+                }
+            });
+        }
+
+        btn = banner.querySelector('a.deny');
+
+        if (btn) {
+            btn.addEventListener('click', function(ev) {
+                ev.stopPropagation();
+                ev.preventDefault();
+
+                setCookie(domain, false);
+                banner.style.display = "none";
+
+                if (onDeny) {
+                    onDeny(banner);
+                }
+            });
+        }
+
+        banner.style.display = "block";
+    };
 }(window));

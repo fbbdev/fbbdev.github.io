@@ -1,27 +1,37 @@
 $bg: #fff;
-$bg-top: #00d470;
-$bg-bottom: #e8fa73;
 
-$body-font: 'Lato', sans-serif;
+$body-font: 'PT Sans', sans-serif;
 $body-color: #000;
 
 $link-color: #333;
-$link-color-hover: #666;
+$link-color-hover: #777;
 $link-decoration: underline;
 
-$header-font: 'Cantarell', sans-serif;
-$header-color: #fff;
+$header-font: 'Raleway', sans-serif;
+$header-weight: 100;
+$header-color: #000;
 
-$page-header-height: 50px;
-$content-header-height: 150px;
+$page-header-font-size: 1.5em;
 
-$footer-bg: #333;
-$footer-color: #888;
-$footer-color-hover: #aaa;
-$footer-link-decoration: none;
+$text-header-padding: 40px;
+$text-header-font-size: 4em;
+$text-width: 600px;
+$par-spacing: 20px;
+
+$footer-height: 50px;
+$footer-padding: 20px;
+$footer-line-height: 30px;
+$footer-font-size: 15px;
+$footer-bg: none;
+$footer-color: $link-color-hover;
+$footer-color-hover: $link-color;
+$footer-link-decoration: underline;
 
 $cookie-banner-location: bottom;
-$cookie-banner-height: 30px;
+$cookie-banner-height: $footer-height;
+$cookie-banner-padding: $footer-padding;
+$cookie-banner-line-height: $footer-line-height;
+$cookie-banner-font-size: $footer-font-size;
 $cookie-banner-align: center;
-$cookie-banner-bg: #f44;
+$cookie-banner-bg: #1976d2;
 $cookie-banner-color: #fff;

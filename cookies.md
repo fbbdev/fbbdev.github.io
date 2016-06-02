@@ -1,49 +1,41 @@
 ---
+layout: content
 title: Cookie policy
 excerpt: "Cookie policy for fbbdev.it"
 style: |
-  #cookie-list, #cookie-list td {
-    border: 1px solid #eee;
-    border-collapse: collapse;
-  }
+    p#browser-help {
+        margin: 0 auto;
+        max-width: 500px;
+        text-align: center;
+    }
 
-  #cookie-list td {
-    margin: 0;
-  }
+    a.browser-help:link,
+    a.browser-help:active,
+    a.browser-help:visited {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 5px;
+        width: 100px;
+        min-height: 100px;
+        line-height: 1;
+        border-radius: 5px;
+        vertical-align: top;
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+    }
 
-  p#browser-help {
-    margin: 0 auto;
-    max-width: 450px;
-    text-align: center;
-  }
+    a.browser-help:hover {
+        background-color: #eee;
+    }
 
-  a.browser-help:link,
-  a.browser-help:active,
-  a.browser-help:visited {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 5px;
-    width: 100px;
-    min-height: 100px;
-    line-height: 1;
-    border-radius: 5px;
-    vertical-align: top;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-  }
-
-  a.browser-help:hover {
-    background-color: #eee;
-  }
-
-  .browser-help img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    width: 48px;
-    height: 48px;
-  }
+    .browser-help img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 48px;
+        height: 48px;
+    }
 ---
 
 {:blank: target="_blank"}

@@ -3,94 +3,164 @@
 
 @import 'base';
 
-html {
-  width: 100%;
-  height: 100%;
+header {
+    position: relative;
+
+    height: 100vh;
+
+    color: $header-color;
+
+    font-family: $header-font;
+    font-weight: $header-weight;
+
+    overflow: hidden;
+
+    & > h1 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+
+        margin: 0;
+        padding: 150px 20px;
+
+        @include circle;
+
+        font-size: 6em;
+        font-weight: inherit;
+    }
+
+    a {
+        &:link, &:active, &:visited {
+            color: $header-color;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+
+    & > .links {
+        width: 100%;
+        height: 100%;
+
+        font-size: 1.5em;
+
+        & > a {
+            display: block;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            text-align: center;
+
+            &:hover {
+                & > i {
+                    border-color: $link-color-hover;
+                }
+            }
+
+            &:nth-of-type(1) {
+                transform:
+                    translate(-50%, -50%)
+                    rotate(-150deg)
+                    translateX(245px)
+                    rotate(150deg);
+
+                i {
+                    font-size: 35px;
+                }
+            }
+
+            &:nth-of-type(2) {
+                transform:
+                    translate(-50%, -50%)
+                    rotate(25deg)
+                    translateX(235px)
+                    rotate(-25deg);
+            }
+
+            &:nth-of-type(3) {
+                transform:
+                    translate(-50%, -50%)
+                    rotate(50deg)
+                    translateX(225px)
+                    rotate(-50deg);
+            }
+        }
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+
+            margin: 10px;
+
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+
+            @include circle;
+
+            background: $bg;
+            box-shadow: 0 0 0 8px $bg;
+
+            font-size: 30px;
+        }
+    }
+
+    & > .scroll-down {
+        position: absolute;
+        bottom: 0px;
+
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+
+        width: 100%;
+
+        text-align: center;
+
+        pointer-events: none;
+
+        & > a {
+            display: inline-block;
+
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+
+            @include circle;
+
+            background: $bg;
+
+            pointer-events: all;
+
+            &:hover {
+                border-color: $link-color-hover;
+            }
+
+            & > i {
+                font-size: 25px;
+            }
+        }
+    }
 }
 
-body {
-  display: table;
+@-moz-document url-prefix() {
+    header {
+        & > h1 {
+            padding: 145px 22px;
+        }
 
-  width: 100%;
-  height: 100%;
+        & > .links i {
+            line-height: 65px;
+        }
 
-  @include background-gradient(0%, $bg-top, $bg-bottom);
-}
-
-#background {
-  @extend .background;
-
-  position: fixed;
-
-  text-align: center;
-}
-
-main {
-  display: table-cell;
-
-  z-index: 1;
-
-  width: 100%;
-  height: 100%;
-
-  text-align: center;
-  vertical-align: middle;
-
-  font-family: $header-font;
-  color: $header-color;
-}
-
-@media (max-width: 479px) {
-  main {
-    font-size: .6em;
-  }
-}
-
-h1 {
-  margin: 0;
-
-  font-size: 6em;
-  font-weight: bold;
-
-  text-shadow: 2px 2px 4px rgba(0,0,0,.4);
-}
-
-h2 {
-  margin: 0;
-
-  font-size: 2em;
-  font-weight: normal;
-
-  text-shadow: 2px 2px 2px rgba(0,0,0,.4);
-}
-
-footer {
-  @include cookie-banner-shape($cookie-banner-location, $cookie-banner-height);
-
-  z-index: 1;
-
-  text-align: center;
-
-  color: #777;
-
-  a:link,
-  a:active,
-  a:visited {
-    color: #777;
-  }
-
-  .dot {
-    display: inline-block;
-
-    margin: 0 10px;
-
-    vertical-align: top;
-
-    font-weight: bold;
-
-  }
-
-  .dot:before {
-    content: '\b7';
-  }
+        & > .scroll-down a {
+            line-height: 60px;
+        }
+    }
 }

@@ -6,7 +6,7 @@
 (function(exports) {
   "use strict";
 
-  var letterCounter = new Worker("js/letter-counter-worker.js");
+  var letterCounter = new Worker("letter-counter-worker.js");
   var container, chart, canvas, ctx;
   var data, done = true;
 
@@ -90,8 +90,8 @@
         {
     			label: "Frequency",
 
-    			backgroundColor: "#00d470",
-    			hoverBackgroundColor: "#86fa73",
+    			backgroundColor: "#1976d2",
+    			hoverBackgroundColor: "#2196f3",
 
     			data: []
     		}
