@@ -62,6 +62,12 @@ body > nav:first-of-type {
     }
 }
 
+@media (max-width: 360px) {
+    body > nav:first-of-type > a {
+        margin-left: $navbar-spacing/2;
+    }
+}
+
 .article {
     padding-top: (2*$navbar-margin + 50px - $text-header-padding);
 }
