@@ -1,4 +1,4 @@
-@mixin button-shape($background: $bg, $color: $body-color, $hover: $link-color-hover) {
+@mixin button-shape($background: $bg, $color: $fg, $hover: $link-color-hover) {
     display: inline-block;
 
     padding: .5em 1em;

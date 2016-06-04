@@ -2,11 +2,11 @@ textarea {
     box-sizing: border-box;
     padding: 10px;
 
-    border: 1px solid $body-color;
+    border: 1px solid $fg;
 
     background: $bg;
 
-    font-family: $body-font;
+    font-family: $font;
     font-size: 1em;
 
     &:hover {
@@ -15,7 +15,7 @@ textarea {
 }
 
 input {
-    border: 1px solid $body-color;
+    border: 1px solid $fg;
     background: $bg;
 
     &:hover {
@@ -25,5 +25,5 @@ input {
 
 input[type=button], button, .button {
     @include button-shape;
-    font-family: $body-font;
+    font-family: $font;
 }
