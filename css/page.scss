@@ -72,7 +72,7 @@ body > nav:first-of-type {
     padding-top: (2*$navbar-margin + 50px - $text-header-padding);
 }
 
-@media (max-width: 1000px) {
+@media (min-height: 600px) and (max-width: 1000px) {
     .article {
         padding-top: (2*$navbar-margin + 50px);
     }
