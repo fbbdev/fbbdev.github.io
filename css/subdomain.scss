@@ -20,13 +20,14 @@
 
     z-index: 50;
 
-    padding: 0 10px;
+    padding: 0 15px;
 
-    width: 50px;
     height: 50px;
     line-height: 50px;
 
     @include circle-shape;
+
+    border-radius: 25px;
 
     background: $bg;
     color: $header-color;
