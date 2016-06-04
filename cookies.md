@@ -51,6 +51,7 @@ preferences) over a period of time, so you don’t have to keep
 re-entering them whenever you come back to the site or browse
 from one page to another.
 
+
 # Our cookies
 
 This website stores some technical cookies. These cookies are necessary
@@ -72,6 +73,7 @@ Technical cookies stored by other entities:
     You can also read their
     [explanation](https://support.cloudflare.com/hc/articles/200170156-What-does-the-CloudFlare-cfduid-cookie-do-){:blank} and
     [privacy policy](https://www.cloudflare.com/security-policy){:blank}.
+
 
 # How to manage cookies
 
