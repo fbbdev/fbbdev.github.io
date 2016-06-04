@@ -1,26 +1,99 @@
+@import 'theme';
+
 @import 'fonts';
 
-@import 'theme';
-@import 'background';
+@import 'button-shape';
+@import 'circle-shape';
+@import 'no-select';
 
 body {
-  margin: 0;
+    margin: 0;
 
-  background: $bg;
+    background: $bg;
 
-  font-family: $body-font;
-  color: $body-color;
+    font-family: $body-font;
+    color: $body-color;
 }
 
-a:link,
-a:active,
-a:visited {
-  color: $link-color;
-  text-decoration: $link-decoration;
+a {
+    &:link, &:active, &:visited {
+        color: $link-color;
+        text-decoration: $link-decoration;
+    }
+
+    &:hover {
+        color: $link-color-hover;
+    }
 }
 
-a:hover {
-  color: $link-color-hover
+a.circle {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+
+    @include circle-shape;
+
+    background: $bg;
+    color: $header-color;
+
+
+    &:link, &:active, &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $link-color-hover;
+        border-color: $link-color-hover;
+    }
+
+    & > i.ion {
+        font-size: 25px;
+    }
 }
 
+footer {
+    padding: (($footer-height - $footer-line-height) / 2) $footer-padding;
+
+    line-height: $footer-line-height;
+
+    background: $footer-bg;
+    color: $footer-color;
+
+    text-align: center;
+
+    font-size: $footer-font-size;
+
+    @include no-select;
+
+    a:link,
+    a:active,
+    a:visited {
+        color: $footer-color;
+        text-decoration: $footer-link-decoration;
+    }
+
+    a:hover {
+        color: $footer-color-hover;
+    }
+
+    .dot {
+        display: inline-block;
+
+        margin: 0 10px;
+
+        vertical-align: top;
+
+        font-weight: bold;
+    }
+
+    .dot:before {
+        content: '\b7';
+    }
+}
+
+@import 'article';
+@import 'form';
 @import 'cookie-banner';

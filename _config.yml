@@ -4,28 +4,33 @@ name: fbbdev.it
 author: Fabio Massaioli (fbbdev)
 description: fbbdev.it is the place for everything crossing my mind
 
+collections:
+    articles:
+        output: true
+        permalink: /articles/:path
+    projects:
+        output: true
+        permalink: /projects/:path
+    tools:
+        output: true
+        permalink: /tools/:path
+
 defaults:
     - scope:
           path: ""
-          type: "pages"
+          type: articles
       values:
-          layout: content
+          layout: article
     - scope:
-          path: "css"
+          path: ""
+          type: projects
       values:
-          layout: ~
+          layout: article
     - scope:
-          path: "fonts"
+          path: ""
+          type: tools
       values:
-          layout: ~
-    - scope:
-          path: "img"
-      values:
-          layout: ~
-    - scope:
-          path: "js"
-      values:
-          layout: ~
+          layout: article
 
 sass:
     style: :compressed

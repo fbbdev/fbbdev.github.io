@@ -1,0 +1,29 @@
+@mixin button-shape($background: $bg, $color: $body-color, $hover: $link-color-hover) {
+    display: inline-block;
+
+    padding: .5em 1em;
+
+    line-height: 1em;
+
+    border: 1px solid $color;
+    border-radius: 1.5em;
+
+    color: $color;
+
+    background: $background;
+
+    font-size: 1em;
+
+    cursor: pointer;
+    @include no-select;
+
+    &:link, &:active, &:visited {
+        color: $color;
+        text-decoration: none;
+    }
+
+    &:hover {
+        border-color: $hover;
+        color: $hover;
+    }
+}

@@ -1,59 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     {% include meta.html %}
 
     {% if page.title %}
-      <title>{{ page.title }} - {{ site.name }}</title>
+        <title>{{ page.title }} - {{ site.name }}</title>
     {% else %}
-      <title>{{ site.name }}</title>
+        <title>{{ site.name }}</title>
     {% endif %}
 
     {% if page.stylesheet %}
-      <link href="css/{{ page.stylesheet }}.css" rel="stylesheet" type="text/css">
+        <link href="/css/{{ page.stylesheet }}.css" rel="stylesheet" type="text/css">
     {% endif %}
 
     {% if layout.stylesheet %}
-      <link href="css/{{ layout.stylesheet }}.css" rel="stylesheet" type="text/css">
+        <link href="/css/{{ layout.stylesheet }}.css" rel="stylesheet" type="text/css">
     {% endif %}
+
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
     {% if page.style %}
-      <style>
-        {{ page.style }}
-      </style>
+        <style>
+            {{ page.style }}
+        </style>
     {% endif %}
 
-    <script src="js/bundle.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        "use strict";
-
-        getCookieConsent(document.querySelector('.cookie-banner'), ".{{ site.domain }}");
-
-        {% for background in page.backgrounds %}
-          noise.seed(12456);
-          var bg = SVG(document.querySelector('{{ background.selector }}'));
-          {% if background.height %}
-            drawBackground(bg, {{ background.width }}, {{ background.height }});
-          {% else %}
-            drawBackground(bg, {{ background.width }});
-          {% endif %}
-        {% endfor %}
-
-        {% for background in layout.backgrounds %}
-          noise.seed(12456);
-          var bg = SVG(document.querySelector('{{ background.selector }}'));
-          {% if background.height %}
-            drawBackground(bg, {{ background.width }}, {{ background.height }});
-          {% else %}
-            drawBackground(bg, {{ background.width }});
-          {% endif %}
-        {% endfor %}
-      });
-    </script>
-  </head>
-  <body>
-    {% include cookie-banner.html %}
+    <script src="/js/bundle.js"></script>
+</head>
+<body>
     {{ content }}
-  </body>
+    {% include footer.html %}
+    {% include cookie-banner.html %}
+</body>
 </html>

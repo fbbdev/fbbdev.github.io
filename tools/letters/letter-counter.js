@@ -6,7 +6,7 @@
 (function(exports) {
   "use strict";
 
-  var letterCounter = new Worker("js/letter-counter-worker.js");
+  var letterCounter = new Worker("letter-counter-worker.js");
   var container, chart, canvas, ctx;
   var data, done = true;
 
@@ -80,7 +80,7 @@
   function resetCounter() {
     if (!done) {
       letterCounter.terminate();
-      letterCounter = new Worker("js/letter-counter.js");
+      letterCounter = new Worker("letter-counter-worker.js");
       letterCounter.onmessage = displayCount;
     }
 
@@ -90,8 +90,8 @@
         {
     			label: "Frequency",
 
-    			backgroundColor: "#00d470",
-    			hoverBackgroundColor: "#86fa73",
+    			backgroundColor: "#000",
+    			hoverBackgroundColor: "#777",
 
     			data: []
     		}
@@ -101,7 +101,10 @@
     chart = null;
 
     var chartContainer = document.getElementById('chart');
-    chartContainer.removeChild(chartContainer.firstChild);
+
+    if (chartContainer.firstChild) {
+        chartContainer.removeChild(chartContainer.firstChild);
+    }
 
     canvas = document.createElement('canvas');
     canvas.width = 600;
@@ -119,7 +122,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function() {
-    container = document.getElementById('container');
+    container = document.getElementById('counts');
 
     document.getElementById('count-button').addEventListener('click', function() {
       resetCounter();

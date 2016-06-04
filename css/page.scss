@@ -1,0 +1,80 @@
+---
+---
+
+@import 'base';
+
+body {
+    position: relative;
+
+    margin-bottom: -$footer-height;
+    padding-bottom: $footer-height;
+
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+body > nav:first-of-type {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    z-index: 50;
+
+    padding: $navbar-margin;
+
+    color: $header-color;
+
+    font-family: $header-font;
+    font-weight: $header-weight;
+
+    font-size: $navbar-font-size;
+
+    pointer-events: none;
+
+    @include no-select;
+
+    & > a {
+        margin-left: $navbar-spacing;
+
+        pointer-events: all;
+
+        &:first-child {
+            margin-left: 0;
+
+            padding: 0 15px;
+
+            line-height: 50px;
+
+            width: auto;
+            border-radius: 25px;
+        }
+
+        &:nth-of-type(2) > i {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body > nav:first-of-type {
+        text-align: center;
+    }
+}
+
+.article {
+    padding-top: (2*$navbar-margin + 50px - $text-header-padding);
+}
+
+@media (max-width: 1000px) {
+    .article {
+        padding-top: (2*$navbar-margin + 50px);
+    }
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -1,66 +1,57 @@
-@mixin cookie-banner-shape($location: bottom, $height: 30px, $z: 100, $padding: 0 20px) {
-  position: fixed;
+@mixin cookie-banner-shape($location: $cookie-banner-location,
+                           $height: $cookie-banner-height,
+                           $padding: $cookie-banner-padding,
+                           $border: $cookie-banner-border,
+                           $line-height: $cookie-banner-line-height,
+                           $font-size: $cookie-banner-font-size,
+                           $z: 100) {
+    position: fixed;
 
-  left: 0;
-  right: 0;
+    left: 0;
+    right: 0;
 
-  @if $location == top {
-    top: 0;
-  }
-  @else if $location == bottom {
-    bottom: 0;
-  }
+    @if $location == top {
+        top: 0;
+        border-bottom: $border;
+    }
+    @else if $location == bottom {
+        bottom: 0;
+        border-top: $border;
+    }
 
-  z-index: $z;
+    z-index: $z;
 
-  padding: $padding;
+    padding: (($height - $line-height) / 2) $padding;
 
-  min-height: $height;
-  line-height: $height;
+    min-height: $line-height;
+    line-height: $line-height;
 
-  font-size: $height/2;
+    font-size: $font-size;
 }
 
 .cookie-banner {
-  @include cookie-banner-shape($cookie-banner-location, $cookie-banner-height);
+    @include cookie-banner-shape;
 
-  background-color: $cookie-banner-bg;
-
-  text-align: $cookie-banner-align;
-
-  color: $cookie-banner-color;
-
-  a:link,
-  a:active,
-  a:visited,
-  a:hover {
+    background: $cookie-banner-bg;
     color: $cookie-banner-color;
-  }
 
-  a.confirm:link,
-  a.confirm:active,
-  a.confirm:visited,
-  a.deny:link,
-  a.deny:active,
-  a.deny:visited {
-    display: inline-block;
+    text-align: $cookie-banner-align;
 
-    background-color: darken($cookie-banner-bg, 20%);
+    @include no-select;
 
-    border-radius: 4px;
+    a {
+        &:link, &:active, &:visited {
+            color: $cookie-banner-color;
+            text-decoration: underline;
+        }
 
-    padding: 0 5px;
+        &:hover {
+            color: $cookie-banner-color-hover;
+        }
+    }
 
-    height: $cookie-banner-height - 8px;
-    line-height: $cookie-banner-height - 8px;
-
-    font-weight: bold;
-    text-decoration: none;
-    color: $cookie-banner-color;
-  }
-
-  a.confirm:hover,
-  a.deny:hover {
-    background-color: darken($cookie-banner-bg, 15%);
-  }
+    a.confirm, a.deny {
+        @include button-shape($cookie-banner-bg-color, $cookie-banner-color, $cookie-banner-color-hover);
+        vertical-align: middle;
+    }
 }
