@@ -3,6 +3,7 @@
                            $padding: $cookie-banner-padding,
                            $border: $cookie-banner-border,
                            $line-height: $cookie-banner-line-height,
+                           $font-family: $font,
                            $font-size: $cookie-banner-font-size,
                            $z: 100) {
     position: fixed;
@@ -26,6 +27,7 @@
     min-height: $line-height;
     line-height: $line-height;
 
+    font-family: $font-family;
     font-size: $font-size;
 }
 
