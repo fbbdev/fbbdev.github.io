@@ -57,7 +57,12 @@ This website stores some technical cookies. These cookies are necessary
 to provide the requested service and are not used to store any
 personally identifiable information.
 
-Here is the list of technical cookies stored by fbbdev.it:
+Technical cookies stored by fbbdev.it:
+
+  - **cookie-consent:** we set this cookie when you close the cookie
+    information banner to avoid showing it every time you visit our website.
+
+Technical cookies stored by other entities:
 
   - **__cfuid:** this cookie is used to identify your computer as a trusted
     machine. During attacks you won't be denied access to our
@@ -67,9 +72,6 @@ Here is the list of technical cookies stored by fbbdev.it:
     You can also read their
     [explanation](https://support.cloudflare.com/hc/articles/200170156-What-does-the-CloudFlare-cfduid-cookie-do-){:blank} and
     [privacy policy](https://www.cloudflare.com/security-policy){:blank}
-
-  - **cookie-consent:** we set this cookie when you close the cookie
-    information banner to avoid showing it every time you visit our website.
 
 # How to manage cookies
 
