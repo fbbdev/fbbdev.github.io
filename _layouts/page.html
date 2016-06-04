@@ -2,12 +2,12 @@
 layout: base
 stylesheet: page
 ---
-<header>
-    <a href="/">{{ site.name }}</a>
-    <nav>
-        <a href="/about"></a>
-    </nav>
-</header>
+<nav>
+    <a class="circle" href="/" title="Home page">{{ site.name }}</a><!--
+ --><a class="circle" href="/about" title="About"><i class="ion ion-ios-person-outline"></i></a><!--
+ --><a class="circle" href="/articles" title="Articles"><i class="ion ion-ios-paper-outline"></i></a><!--
+ --><a class="circle" href="/projects" title="Projects"><i class="ion ion-ios-lightbulb-outline"></i></a>
+</nav>
 <main class="{{ layout.main_class }}">
     {{ content }}
 </main>

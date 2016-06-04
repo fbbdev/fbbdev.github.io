@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: article
 title: Cookie policy
 excerpt: "Cookie policy for fbbdev.it"
 style: |
@@ -18,6 +18,7 @@ style: |
         width: 100px;
         min-height: 100px;
         line-height: 1;
+        border: 1px solid transparent;
         border-radius: 5px;
         vertical-align: top;
         text-align: center;
@@ -26,7 +27,7 @@ style: |
     }
 
     a.browser-help:hover {
-        background-color: #eee;
+        border-color: #000;
     }
 
     .browser-help img {

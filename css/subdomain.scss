@@ -1,34 +1,47 @@
 ---
 ---
 
-@import 'fonts';
 @import 'theme';
+@import 'fonts';
+
+@import 'button-shape';
+@import 'circle-shape';
+@import 'no-select';
+
 @import 'cookie-banner';
 
 .logo {
+    display: inline-block;
     position: fixed;
 
-    top: 0;
-    left: 0;
-    right: 0;
+    left: $navbar-margin;
+    top: $navbar-margin;
 
     z-index: 50;
 
     padding: 0 10px;
 
+    width: 50px;
     height: 50px;
     line-height: 50px;
 
-    background: transparent;
+    @include circle-shape;
+
+    background: $bg;
+    color: $header-color;
 
     font-family: $header-font;
-    font-size: 30px;
-    font-weight: bold;
-    color: $header-color;
-    text-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    font-weight: $header-weight;
+    font-size: $navbar-font-size;
 
-    a:link, a:active, a:visited {
-        color: $header-color;
+    @include no-select;
+
+    &:link, &:active, &:visited {
         text-decoration: none;
+    }
+
+    &:hover {
+        color: $link-color-hover;
+        border-color: $link-color-hover;
     }
 }

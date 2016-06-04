@@ -3,60 +3,78 @@
 
 @import 'base';
 
-body > header:first-of-type {
+body {
+    position: relative;
+
+    margin-bottom: -$footer-height;
+    padding-bottom: $footer-height;
+
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+body > nav:first-of-type {
     position: fixed;
-    width: 100vw;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    z-index: 50;
+
+    padding: $navbar-margin;
 
     color: $header-color;
 
     font-family: $header-font;
     font-weight: $header-weight;
 
-    font-size: $page-header-font-size;
-}
+    font-size: $navbar-font-size;
 
-main {
-    &.content {
-        & > header:first-of-type {
-            text-align: center;
+    pointer-events: none;
 
-            padding: $text-header-padding;
+    @include no-select;
 
-            color: $header-color;
+    & > a {
+        margin-left: $navbar-spacing;
 
-            font-family: $header-font;
-            font-weight: $header-weight;
-            font-size: $text-header-font-size;
+        pointer-events: all;
+
+        &:first-child {
+            margin-left: 0;
+
+            padding: 0 15px;
+
+            line-height: 50px;
+
+            width: auto;
+            border-radius: 25px;
         }
 
-        section {
-            margin: 0 auto;
-            padding-bottom: $par-spacing;
-
-            max-width: $text-width;
-
-            text-align: justify;
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: $header-font;
-            font-weight: $header-weight;
-
-            margin: 0;
-            margin-bottom: $par-spacing;
-        }
-
-        h1 {
-            text-align: center;
-
-            font-size: 2em;
-        }
-
-        p {
-            margin: 0;
-            margin-bottom: $par-spacing;
-
-            line-height: 1.8;
+        &:nth-of-type(2) > i {
+            font-size: 30px;
         }
     }
+}
+
+@media (max-width: 600px) {
+    body > nav:first-of-type {
+        text-align: center;
+    }
+}
+
+.article {
+    padding-top: (2*$navbar-margin + 50px - $text-header-padding);
+}
+
+@media (max-width: 1000px) {
+    .article {
+        padding-top: (2*$navbar-margin + 50px);
+    }
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

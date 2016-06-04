@@ -1,0 +1,29 @@
+textarea {
+    box-sizing: border-box;
+    padding: 10px;
+
+    border: 1px solid $body-color;
+
+    background: $bg;
+
+    font-family: $body-font;
+    font-size: 1em;
+
+    &:hover {
+        border-color: $link-color-hover;
+    }
+}
+
+input {
+    border: 1px solid $body-color;
+    background: $bg;
+
+    &:hover {
+        border-color: $link-color-hover;
+    }
+}
+
+input[type=button], button, .button {
+    @include button-shape;
+    font-family: $body-font;
+}

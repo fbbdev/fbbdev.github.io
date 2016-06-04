@@ -1,4 +1,4 @@
-@mixin circle($color: $header-color) {
+@mixin circle-shape($color: $header-color) {
     border: 1px solid $color;
     border-radius: 100%;
 

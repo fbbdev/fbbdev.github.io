@@ -1,12 +1,12 @@
 <div id="cookie-banner" class="cookie-banner">
     This website is using cookies.
-    By continuing to use our website you agree to our use of cookies.
+    By staying on our website you agree to our use of cookies.
     <a href="/cookies">Learn more</a>
     <a class="confirm" href="#" style="margin-left: 10px;">Got it</a>
 </div>
 <script>
-(function() {
-    "use strict";
-    getCookieConsent(document.getElementById('cookie-banner'), ".{{ site.domain }}");
-}());
+    (function() {
+        "use strict";
+        getCookieConsent(document.getElementById('cookie-banner'), ".{{ site.domain }}");
+    }());
 </script>

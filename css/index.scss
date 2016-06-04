@@ -3,7 +3,7 @@
 
 @import 'base';
 
-header {
+body > header:first-of-type {
     position: relative;
 
     height: 100vh;
@@ -14,6 +14,7 @@ header {
     font-weight: $header-weight;
 
     overflow: hidden;
+    @include no-select;
 
     & > h1 {
         position: absolute;
@@ -23,23 +24,16 @@ header {
         transform: translate(-50%, -50%);
 
         margin: 0;
-        padding: 150px 20px;
+        padding: 0;
 
-        @include circle;
+        width: 400px;
+        height: 400px;
+        line-height: 400px;
+
+        @include circle-shape;
 
         font-size: 6em;
         font-weight: inherit;
-    }
-
-    a {
-        &:link, &:active, &:visited {
-            color: $header-color;
-            text-decoration: none;
-        }
-
-        &:hover {
-            color: $link-color-hover;
-        }
     }
 
     & > .links {
@@ -57,7 +51,14 @@ header {
 
             text-align: center;
 
+            &:link, &:active, &:visited {
+                color: $header-color;
+                text-decoration: none;
+            }
+
             &:hover {
+                color: $link-color-hover;
+
                 & > i {
                     border-color: $link-color-hover;
                 }
@@ -67,7 +68,7 @@ header {
                 transform:
                     translate(-50%, -50%)
                     rotate(-150deg)
-                    translateX(245px)
+                    translateX(225px)
                     rotate(150deg);
 
                 i {
@@ -102,7 +103,7 @@ header {
             height: 60px;
             line-height: 60px;
 
-            @include circle;
+            @include circle-shape;
 
             background: $bg;
             box-shadow: 0 0 0 8px $bg;
@@ -126,41 +127,8 @@ header {
         pointer-events: none;
 
         & > a {
-            display: inline-block;
-
-            width: 50px;
-            height: 50px;
-            line-height: 50px;
-
-            @include circle;
-
-            background: $bg;
-
-            pointer-events: all;
-
-            &:hover {
-                border-color: $link-color-hover;
-            }
-
-            & > i {
-                font-size: 25px;
-            }
-        }
-    }
-}
-
-@-moz-document url-prefix() {
-    header {
-        & > h1 {
-            padding: 145px 22px;
-        }
-
-        & > .links i {
-            line-height: 65px;
-        }
-
-        & > .scroll-down a {
             line-height: 60px;
+            pointer-events: all;
         }
     }
 }

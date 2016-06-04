@@ -1,0 +1,23 @@
+---
+layout: article
+title: Projects
+excerpt: "List of software projects by fbbdev"
+---
+{% for project in site.projects %}
+<article style="border: 1px solid #000; margin-bottom: 20px; padding: 10px;">
+    <a href="{{ project.url }}" style="display: block;">
+        <h2>{{ project.title }}</h2>
+        {{ project.excerpt }}
+    </a>
+</article>
+{% endfor %}
+
+<h1>Online tools</h1>
+{% for tool in site.tools %}
+<article style="border: 1px solid #000; margin-bottom: 20px; padding: 10px;">
+    <a href="{{ tool.url }}" style="display: block;">
+        <h2>{{ tool.title }}</h2>
+        {{ tool.excerpt }}
+    </a>
+</article>
+{% endfor %}

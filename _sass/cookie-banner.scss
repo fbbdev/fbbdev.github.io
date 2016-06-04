@@ -1,6 +1,7 @@
 @mixin cookie-banner-shape($location: $cookie-banner-location,
                            $height: $cookie-banner-height,
                            $padding: $cookie-banner-padding,
+                           $border: $cookie-banner-border,
                            $line-height: $cookie-banner-line-height,
                            $font-size: $cookie-banner-font-size,
                            $z: 100) {
@@ -11,9 +12,11 @@
 
     @if $location == top {
         top: 0;
+        border-bottom: $border;
     }
     @else if $location == bottom {
         bottom: 0;
+        border-top: $border;
     }
 
     z-index: $z;
@@ -29,43 +32,26 @@
 .cookie-banner {
     @include cookie-banner-shape;
 
-    background-color: $cookie-banner-bg;
+    background: $cookie-banner-bg;
+    color: $cookie-banner-color;
 
     text-align: $cookie-banner-align;
 
-    color: $cookie-banner-color;
+    @include no-select;
 
-    a:link,
-    a:active,
-    a:visited,
-    a:hover {
-        color: $cookie-banner-color;
+    a {
+        &:link, &:active, &:visited {
+            color: $cookie-banner-color;
+            text-decoration: underline;
+        }
+
+        &:hover {
+            color: $cookie-banner-color-hover;
+        }
     }
 
-    a.confirm:link,
-    a.confirm:active,
-    a.confirm:visited,
-    a.deny:link,
-    a.deny:active,
-    a.deny:visited {
-        display: inline-block;
-
-        background-color: darken($cookie-banner-bg, 20%);
-
-        border-radius: $cookie-banner-font-size;
-
-        padding: 0 10px;
-
-        height: $cookie-banner-font-size * 2;
-        line-height: $cookie-banner-font-size * 2;
-
-        font-weight: bold;
-        text-decoration: none;
-        color: $cookie-banner-color;
-    }
-
-    a.confirm:hover,
-    a.deny:hover {
-        background-color: darken($cookie-banner-bg, 15%);
+    a.confirm, a.deny {
+        @include button-shape($cookie-banner-bg-color, $cookie-banner-color, $cookie-banner-color-hover);
+        vertical-align: middle;
     }
 }

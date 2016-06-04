@@ -1,7 +1,6 @@
 $bg: #fff;
-
-$body-font: 'PT Sans', sans-serif;
 $body-color: #000;
+$body-font: 'PT Sans', sans-serif;
 
 $link-color: #333;
 $link-color-hover: #777;
@@ -9,13 +8,16 @@ $link-decoration: underline;
 
 $header-font: 'Raleway', sans-serif;
 $header-weight: 100;
-$header-color: #000;
+$header-color: $body-color;
 
-$page-header-font-size: 1.5em;
+$navbar-font-size: 1.5em;
+$navbar-margin: 10px;
+$navbar-spacing: 10px;
 
 $text-header-padding: 40px;
 $text-header-font-size: 4em;
 $text-width: 600px;
+$text-margin: 40px;
 $par-spacing: 20px;
 
 $footer-height: 50px;
@@ -33,5 +35,14 @@ $cookie-banner-padding: $footer-padding;
 $cookie-banner-line-height: $footer-line-height;
 $cookie-banner-font-size: $footer-font-size;
 $cookie-banner-align: center;
-$cookie-banner-bg: #1976d2;
-$cookie-banner-color: #fff;
+$cookie-banner-border: 1px solid $body-color;
+$cookie-banner-bg-color: $bg;
+$cookie-banner-color: $body-color;
+$cookie-banner-color-hover: $link-color-hover;
+$cookie-banner-bg: repeating-linear-gradient(
+    -60deg,
+    $cookie-banner-bg-color,
+    $cookie-banner-bg-color 9px,
+    #e5e5e5 9px,
+    #e5e5e5 10px
+);
