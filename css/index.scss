@@ -212,8 +212,24 @@ body > header:first-of-type {
 }
 
 @media (max-height: 279px) {
-    body > header:first-of-type > .links {
-        margin-top: -20px;
+    body > header:first-of-type {
+        & > h1 {
+            margin-top: 0;
+        }
+
+        & > .links {
+            margin-top: -20px;
+        }
+
+        & > .scroll-down > a {
+            width: 30px;
+            height: 30px;
+            line-height: 35px;
+
+            & > i.ion {
+                font-size: 15px;
+            }
+        }
     }
 }
 
