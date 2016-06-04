@@ -71,7 +71,7 @@ Technical cookies stored by other entities:
     ([Content Delivery Network](http://en.wikipedia.org/wiki/Content_delivery_network){:blank}).
     You can also read their
     [explanation](https://support.cloudflare.com/hc/articles/200170156-What-does-the-CloudFlare-cfduid-cookie-do-){:blank} and
-    [privacy policy](https://www.cloudflare.com/security-policy){:blank}
+    [privacy policy](https://www.cloudflare.com/security-policy){:blank}.
 
 # How to manage cookies
 
