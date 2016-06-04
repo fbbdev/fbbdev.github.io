@@ -35,14 +35,8 @@ $cookie-banner-padding: $footer-padding;
 $cookie-banner-line-height: $footer-line-height;
 $cookie-banner-font-size: $footer-font-size;
 $cookie-banner-align: center;
-$cookie-banner-border: 1px solid $fg;
-$cookie-banner-bg-color: $bg;
-$cookie-banner-color: $fg;
-$cookie-banner-color-hover: $link-color-hover;
-$cookie-banner-bg: repeating-linear-gradient(
-    -60deg,
-    $cookie-banner-bg-color,
-    $cookie-banner-bg-color 9px,
-    #e5e5e5 9px,
-    #e5e5e5 10px
-);
+$cookie-banner-border: none;
+$cookie-banner-bg-color: $fg;
+$cookie-banner-color: $bg;
+$cookie-banner-color-hover: $cookie-banner-color;
+$cookie-banner-bg: $cookie-banner-bg-color;

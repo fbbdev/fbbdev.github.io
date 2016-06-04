@@ -47,3 +47,14 @@
         border-color: $link-color-hover;
     }
 }
+
+.logo.light {
+    border-color: $bg;
+    background: none;
+    color: $bg;
+
+    &:hover {
+        color: $bg;
+        border-color: $bg;
+    }
+}
