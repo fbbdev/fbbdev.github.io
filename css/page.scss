@@ -119,3 +119,45 @@ footer {
     right: 0;
     bottom: 0;
 }
+
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape),
+       only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
+    body {
+        min-height: 768px;
+    }
+}
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait),
+       only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: portrait) {
+    body {
+        min-height: 1024px;
+    }
+}
+
+/* iphone5 and iphone4 landscape */
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+       only screen and (device-width: 568px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+       only screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio : 2),
+       only screen and (device-width: 480px) and (device-height: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    body {
+        min-height: 320px;
+    }
+}
+
+/* iphone5 portrait */
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2),
+       only screen and (device-width: 568px) and (device-height: 320px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+    body {
+        min-height: 568px;
+    }
+}
+
+/* iphone4 portrait */
+@media only screen and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio : 2),
+       only screen and (device-width: 480px) and (device-height: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    body {
+        min-height: 480px;
+    }
+}
