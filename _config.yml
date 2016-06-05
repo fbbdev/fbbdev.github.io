@@ -25,12 +25,12 @@ defaults:
           path: ""
           type: projects
       values:
-          layout: article
+          layout: project
     - scope:
           path: ""
           type: tools
       values:
-          layout: article
+          layout: page
 
 sass:
     style: :compressed

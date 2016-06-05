@@ -42,14 +42,25 @@
 
     h1 {
         text-align: center;
-
         font-size: 2em;
     }
 
-    p, ul {
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p, ul, div {
         margin: 0;
         margin-bottom: $par-spacing;
 
         line-height: 1.8;
+    }
+
+    pre {
+        line-height: 1;
     }
 }

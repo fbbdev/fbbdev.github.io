@@ -1,0 +1,30 @@
+{% case link.type %}
+    {% when 'website' %}
+        {% assign link_icon = 'ion-ios-world-outline' %}
+        {% assign link_label = 'Website' %}
+        {% assign link_title = link_label %}
+        {% assign link_target = '_blank' %}
+    {% when 'docs' %}
+        {% assign link_icon = 'ion-ios-book-outline' %}
+        {% assign link_label = 'Docs' %}
+        {% assign link_title = link_label %}
+        {% assign link_target = '_blank' %}
+    {% when 'github' %}
+        {% assign link_icon = 'ion-social-github-outline' %}
+        {% assign link_label = 'Repository' %}
+        {% assign link_title = 'GitHub Repository' %}
+        {% assign link_target = '_blank' %}
+    {% when 'package' %}
+        {% assign link_icon = 'ion-ios-box-outline' %}
+        {% assign link_label = 'Package' %}
+        {% assign link_title = 'Package info' %}
+        {% assign link_target = '_blank' %}
+{% endcase %}
+<a class="{{ link_class | default: link.class | default: 'button' }}" href="{{ link.url }}"
+   {% if link.title or link_title %}title="{{ link.title | default: link_title }}"{% endif %}
+   {% if link.target or link_target %}target="{{ link.target | default: link_target }}"{% endif %}>
+    {% case link.type %}
+        {% else %}
+            {% if link.icon or link_icon %}<i class="ion {{ link.icon | default: link_icon }}"></i>{% endif %}{% if link.label or link_label %}<span>{{ link.label | default: link_label }}</span>{% endif %}
+    {% endcase %}
+</a>

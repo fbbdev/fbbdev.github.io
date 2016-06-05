@@ -1,7 +1,7 @@
 @mixin button-shape($background: $bg, $color: $fg, $hover: $link-color-hover) {
     display: inline-block;
 
-    padding: .5em 1em;
+    padding: .5em .75em;
 
     line-height: 1em;
 

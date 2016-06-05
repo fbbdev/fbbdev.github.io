@@ -4,7 +4,15 @@ title: Projects
 excerpt: "List of software projects by fbbdev"
 ---
 {% for project in site.projects %}
-<article style="border: 1px solid #000; margin-bottom: 20px; padding: 10px;">
+<article style="margin-bottom: 20px; padding: 10px;">
+    {% if project.links %}
+    <aside style="float: right;">
+        {% assign link_class = 'circle' %}
+        {% for link in project.links %}
+            {% include links.html %}
+        {% endfor %}
+    </aside>
+    {% endif %}
     <a href="{{ project.url }}" style="display: block;">
         <h2>{{ project.title }}</h2>
         {{ project.excerpt }}
@@ -14,7 +22,7 @@ excerpt: "List of software projects by fbbdev"
 
 <h1>Online tools</h1>
 {% for tool in site.tools %}
-<article style="border: 1px solid #000; margin-bottom: 20px; padding: 10px;">
+<article style="margin-bottom: 20px; padding: 10px;">
     <a href="{{ tool.url }}" style="display: block;">
         <h2>{{ tool.title }}</h2>
         {{ tool.excerpt }}

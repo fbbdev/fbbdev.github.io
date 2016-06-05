@@ -78,6 +78,41 @@ body > nav:first-of-type {
     }
 }
 
+@media (max-height: 599px) and (max-width: 1000px) {
+    .article > header:first-of-type {
+        padding-bottom: $navbar-margin;
+    }
+}
+
+@media (max-width: 480px) {
+    .article > header:first-of-type {
+        padding-left: $navbar-margin;
+        padding-right: $navbar-margin;
+    }
+}
+
+.article > aside:first-of-type {
+    margin: 0;
+    margin-bottom: $par-spacing - 5px;
+    text-align: center;
+
+    & > a.button {
+        margin: 5px;
+
+        font-size: 1.5em;
+
+        & > i.ion {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        & > span {
+            font-size: (1em / 1.5);
+        }
+    }
+}
+
 footer {
     position: absolute;
     left: 0;
