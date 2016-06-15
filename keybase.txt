@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/fbbdev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://fbbdev.it
+  * I am fbbdev (https://keybase.io/fbbdev) on keybase.
+  * I have a public key with fingerprint 6DC7 FF6F 54D7 A669 CD82  970F AEA6 8DC3 CC3A 32A5
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01012b1fc21c7b7d8222d5f83b8975290aa47b26a585df88ac5da9b80dc1f03aecaf0a",
+            "fingerprint": "6dc7ff6f54d7a669cd82970faea68dc3cc3a32a5",
+            "host": "keybase.io",
+            "key_id": "aea68dc3cc3a32a5",
+            "kid": "01012b1fc21c7b7d8222d5f83b8975290aa47b26a585df88ac5da9b80dc1f03aecaf0a",
+            "uid": "d4467340b66e7016c44dcd4761c42f19",
+            "username": "fbbdev"
+        },
+        "service": {
+            "hostname": "fbbdev.it",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1465978685,
+    "expire_in": 157680000,
+    "prev": "fb850b580a94fd8cdba3d609eb51d14faab937feca88f0de65fb2b2ac475e2be",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUl1IFFEY3d3SSsl+HipJEccCkyVmZmfu3NmKtAxEFAMLy4W2++uO5u66O2uJ
+SWEgFpnag1lSRFREmCn0JETQ70NCUVkQRKWoRRQEJaWxdUfqIeix+3K5555zvvN9
+fF2L57k87oHLHXdG/Ool98P32FWFlhQ1SzhCmyR/s1TH5i62j7K4HayzqOSXZEVW
+VKxwoirEwAaFqqpSnUMfhqahq6aMkGZgFSAd6pRDiIhOkYmhTInCZR9iBHEZSV6J
+W+EaFovGrLAtbAElBueA6xo1EAAmEcamIXPEEICU+AjxIZ+KdCEMReKOQoTDKM7W
+WxGBiUdwLt4/+P85d2LOjmoaMHyajAFghqwAommUUM0ACtFUrpgOMc5iYVTPBJtj
+TFmj1OKVBNZoEeaM1enjr//1li1k0VjEjpDIPgGHbDsa9zsyuynq8PYzHPztEMRW
+mIoRCkUji8WtSFjyK4JJbMuxVDSgmwYEUPdK7EDUirGg5TB0A0BZHKeOSOSUhrqM
+dSgjU6vkFBKKkY8C2WRYV6iicYSw6TO46B9CLlMGdI5VrCKiGTpTMZOcphrCEcmv
+iZyoRnjGrZowshMxJrWkHXVnzXe5Pa7UFI+zXK60RUv/bFyycMGP9NK+xNehkoJr
+OfdWbOwPDSQrFu3uqP5y/vsNe+zt/fJA9uS3p58OTDzeUXL15c8pKefDi8myqkRZ
+qOwMfvj81pUP13FDQ1v+OWYMJvr6V5a3nnr1ojM4nsnBprZnW0JvFm5O3Y7DT0j9
+1J69XR8PtsirXL25hebyZG1xQUXKyZ7s0yMX2uHrvGO7XDuLdnS2p7c+iM52vzub
+XTxaNZgfuOlJzkxPk/Ilw1nLDh3H97auydiApc/j3Z68tavTexQtQK321YMnDj/O
+qC9DeU9Gvw2PVGZuSwuW3Jz2Tjy6PVE6m2NW945dybgYCtyttdbldjW3VJtZEA95
+39QVds4c+QU=
+=nqLU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fbbdev
+
+==================================================================
