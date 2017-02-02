@@ -26,6 +26,10 @@ a {
     &:hover {
         color: $link-color-hover;
     }
+
+    code {
+        text-decoration: $link-decoration;
+    }
 }
 
 a.circle {

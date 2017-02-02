@@ -37,27 +37,33 @@
         font-weight: $header-weight;
 
         margin: 0;
-        margin-bottom: $par-spacing;
+        margin-bottom: $par-spacing/2;
     }
 
     h1 {
         text-align: center;
         font-size: 2em;
+        margin-bottom: $par-spacing;
     }
 
     h2 {
         font-size: 1.8em;
+        margin-bottom: $par-spacing;
     }
 
     h3 {
         font-size: 1.5em;
     }
 
-    p, ul, div {
+    p, ul, ol, div {
         margin: 0;
         margin-bottom: $par-spacing;
 
         line-height: 1.8;
+    }
+
+    ul ul, ul ol, ol ul, ol ol {
+        margin-bottom: 0;
     }
 
     pre {

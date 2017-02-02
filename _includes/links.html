@@ -12,12 +12,12 @@
     {% when 'github' %}
         {% assign link_icon = 'ion-social-github-outline' %}
         {% assign link_label = 'Repository' %}
-        {% assign link_title = 'GitHub Repository' %}
+        {% assign link_title = link_label %}
         {% assign link_target = '_blank' %}
     {% when 'package' %}
         {% assign link_icon = 'ion-ios-box-outline' %}
         {% assign link_label = 'Package' %}
-        {% assign link_title = 'Package info' %}
+        {% assign link_title = link_label %}
         {% assign link_target = '_blank' %}
 {% endcase %}
 <a class="{{ link_class | default: link.class | default: 'button' }}" href="{{ link.url }}"

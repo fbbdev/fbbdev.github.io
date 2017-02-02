@@ -42,6 +42,6 @@ to read local files. Currently it only returns the codec of the first
 video and audio streams, but it can be extended to extract anything
 contained in mp4 atoms.
 
-You can find a demo and detailed documentation on [the project's website]({{ page.website }}).
+You can find a demo and detailed documentation on [the project's website]({% for link in page.links %}{% if link.type == 'website' %}{{ link.url }}{% break %}{% endif %}{% endfor %}).
 
 mp4analyzer.js is distributed under the open source MIT license.

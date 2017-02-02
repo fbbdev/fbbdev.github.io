@@ -5,9 +5,9 @@ author: Fabio Massaioli (fbbdev)
 description: fbbdev.it is the place for everything crossing my mind
 
 collections:
-    articles:
+    writings:
         output: true
-        permalink: /articles/:path
+        permalink: /writings/:path
     projects:
         output: true
         permalink: /projects/:path
@@ -18,7 +18,7 @@ collections:
 defaults:
     - scope:
           path: ""
-          type: articles
+          type: writings
       values:
           layout: article
     - scope:
