@@ -1,0 +1,14 @@
+---
+layout: article
+title: Writings
+excerpt: "List of writings by fbbdev"
+stylesheet: item_index
+---
+{% for writing in site.writings %}
+<article>
+    <a href="{{ writing.url }}">
+        <h2>{{ writing.title }}</h2>
+        {{ writing.excerpt }}
+    </a>
+</article>
+{% endfor %}
