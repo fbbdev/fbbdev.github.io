@@ -6,48 +6,24 @@
 article {
     position: relative;
     margin-bottom: 40px;
-
-    // Cut corners
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-top: 8px solid $bg;
-        border-right: 8px solid $bg;
-        width: 0;
-    }
-
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        border-bottom: 8px solid $bg;
-        border-left: 8px solid $bg;
-        width: 0;
-    }
+    border-left: 1px solid transparent;
+    -webkit-transition: border-left-color .5s;
+    transition: border-left-color .5s;
 
     &:hover {
-        background: $item-link-background;
-
-        &:before {
-            border-right-color: $item-link-background;
-        }
-
-        &:after {
-            border-left-color: $item-link-background;
-        }
+        border-left-color: $fg;
+        -webkit-transition: border-left-color 1s;
+        transition: border-left-color 1s;
     }
 
     & > aside {
         float: right;
-        margin: 10px;
+        margin: 10px 15px;
     }
 
     & > a {
         display: block;
-        padding: 10px;
+        padding: 15px;
 
         &:link, &:active, &:visited, &:hover {
             text-decoration: none;
