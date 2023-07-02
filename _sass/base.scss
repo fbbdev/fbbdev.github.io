@@ -83,6 +83,7 @@ footer {
     a:visited {
         color: $footer-color;
         text-decoration: $footer-link-decoration;
+        white-space: nowrap;
     }
 
     a:hover {

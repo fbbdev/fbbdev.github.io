@@ -2,7 +2,8 @@
                    $color: $header-color,
                    $font: $header-font,
                    $weight: $header-weight,
-                   $size: $text-header-font-size) {
+                   $size: $text-header-font-size,
+                   $stroke: $text-header-stroke) {
     padding: $padding;
 
     color: $color;
@@ -12,6 +13,7 @@
     font-family: $font;
     font-weight: $weight;
     font-size: $size;
+    -webkit-text-stroke: $stroke;
 }
 
 .title {
@@ -44,6 +46,7 @@
         text-align: center;
         font-size: 2em;
         font-weight: $header-weight;
+        -webkit-text-stroke: .3px;
         margin-bottom: $par-spacing;
     }
 

@@ -17,8 +17,9 @@ body > header:first-of-type {
     @include no-select;
 
     & > h1 {
-        font-size: 6em;
+        font-size: 5em;
         font-weight: inherit;
+        -webkit-text-stroke: .45px $bg;
     }
 
     & > .links {
@@ -64,6 +65,10 @@ body > header:first-of-type {
 
             font-size: 30px;
         }
+
+        span {
+            -webkit-text-stroke: .5px;
+        }
     }
 
     & > .scroll-down {
@@ -85,6 +90,13 @@ body > header:first-of-type {
             pointer-events: all;
         }
     }
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 @media (min-width: 600px) and (min-height: 600px) {
@@ -172,6 +184,7 @@ body > header:first-of-type {
             margin-bottom: 0;
 
             font-size: 4em;
+            -webkit-text-stroke-width: .3px;
         }
 
         & > .links {
