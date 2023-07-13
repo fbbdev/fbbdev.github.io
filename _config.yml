@@ -33,6 +33,7 @@ defaults:
       values:
           layout: page
 
+markdown: kramdown
 sass:
     style: :compressed
 

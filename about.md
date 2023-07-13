@@ -1,5 +1,5 @@
 ---
 layout: article
-title: "About"
+title: "About me"
 excerpt: "Personal information and contact info"
 ---

@@ -28,8 +28,7 @@ style: |
 
 The implementation is fully compliant with the [FastCGI 1.0 Specification](https://fast-cgi.github.io/spec).
 
-Example
--------
+# Usage example
 
 ```javascript
 var fcgi = require('node-fastcgi');
