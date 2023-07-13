@@ -32,6 +32,10 @@
         max-width: $text-width;
 
         text-align: justify;
+        hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -63,7 +67,7 @@
         font-size: 1.2em;
     }
 
-    p, ul, ol, div, hr, table {
+    p, ul, ol, div, hr, figure, table {
         margin: 0;
         margin-bottom: $par-spacing;
 
@@ -84,9 +88,6 @@
     }
 
     figure {
-        max-width: $text-width;
-        margin: $par-spacing 0;
-
         img {
             display: block;
             margin: 0;
