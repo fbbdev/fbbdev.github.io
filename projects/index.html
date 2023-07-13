@@ -25,6 +25,14 @@ stylesheet: item_index
 <h1>Online tools</h1>
 {% for tool in site.tools %}
 <article>
+    {% if tool.links %}
+    <aside>
+        {% assign link_class = 'circle' %}
+        {% for link in tool.links %}
+            {% include links.html %}
+        {% endfor %}
+    </aside>
+    {% endif %}
     <a href="{{ tool.url }}">
         <h2>{{ tool.title }}</h2>
         {{ tool.excerpt }}

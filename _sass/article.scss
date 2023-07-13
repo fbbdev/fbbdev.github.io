@@ -88,9 +88,11 @@
     }
 
     figure {
-        img {
+        text-align: center;
+
+        img, video {
             display: block;
-            margin: 0;
+            margin: 0 auto;
             width: 100%;
             height: auto;
         }
@@ -99,7 +101,6 @@
             display: block;
             margin-top: 5px;
             font-style: italic;
-            text-align: center;
         }
     }
 
