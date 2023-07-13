@@ -1,12 +1,13 @@
 ---
 title: node-fastcgi
 excerpt: "Create FastCGI applications with node.js"
+ordinal: 200
 
 links:
     - type: package
       url: https://www.npmjs.com/package/node-fastcgi
     - type: docs
-      url: https://github.com/fbbdev/node-fastcgi/blob/master/README.md
+      url: https://github.com/fbbdev/node-fastcgi/#readme
     - type: github
       url: https://github.com/fbbdev/node-fastcgi
 

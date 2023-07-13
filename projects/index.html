@@ -4,7 +4,8 @@ title: Projects
 excerpt: "List of software projects by fbbdev"
 stylesheet: item_index
 ---
-{% for project in site.projects %}
+{% assign sorted_projects = site.projects | sort: "ordinal" %}
+{% for project in sorted_projects %}
 <article>
     {% if project.links %}
     <aside>
