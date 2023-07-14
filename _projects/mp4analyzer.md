@@ -36,12 +36,14 @@ style: |
     }
 ---
 
-**mp4analyzer.js** is a tool for parsing mp4/mov files and extracting information.
-It uses HTML5 [FileReader](http://developer.mozilla.org/en-US/docs/Web/API/FileReader) and
-[DataView](http://developer.mozilla.org/en-US/docs/Web/API/DataView) APIs
-to read local files. Currently it only returns the codec of the first
-video and audio streams, but it can be extended to extract anything
-contained in mp4 atoms.
+**mp4analyzer.js** is a browser library for parsing mp4/mov files and extracting information.
+It uses the HTML5 [FileReader](http://developer.mozilla.org/en-US/docs/Web/API/FileReader)
+and [DataView](http://developer.mozilla.org/en-US/docs/Web/API/DataView) APIs to read
+local files. Currently it only returns the codec of the first video and audio streams,
+but it can be extended to extract anything contained in mp4 atoms.
+
+It was originally developed to validate user provided video files on the client before
+performing a costly upload operation.
 
 You can find a demo and detailed documentation on [the project's website]({% for link in page.links %}{% if link.type == 'website' %}{{ link.url }}{% break %}{% endif %}{% endfor %}).
 
