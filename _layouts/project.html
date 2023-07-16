@@ -6,11 +6,7 @@ main_class: article
     {{ page.title }}
 </header>
 {% if page.links %}
-    <aside>
-        {% for link in page.links %}
-            {% include links.html %}
-        {% endfor %}
-    </aside>
+    <aside>{% for link in page.links %}{% include links.html %}{% endfor %}</aside>
 {% endif %}
 <section>
     {{ content }}
