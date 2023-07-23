@@ -25,7 +25,7 @@ information and examples can be found in the
   <figcaption>
     A screenshot of the user interface, showing the transition diagram
     of a Turing machine (in the middle), a textual description of the
-    transition table (on the left) and the tape with some symbols on it
+    transition table (on the right) and the tape with some symbols on it
     (at the bottom).
   </figcaption>
 </figure>
