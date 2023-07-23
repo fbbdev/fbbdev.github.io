@@ -52,6 +52,10 @@
         font-weight: $header-weight;
         -webkit-text-stroke: .3px;
         margin-bottom: $par-spacing;
+        padding: 10px 0;
+        border: 0 solid black;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
     }
 
     h2 {

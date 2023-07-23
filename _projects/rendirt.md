@@ -59,7 +59,7 @@ accurate measures, just average execution times to give an idea)*.
   </figure>
 </div>
 
-# Usage example
+# Usage
 
 This is the bare minimum to obtain an image. For more details and variations
 look into the [examples](https://github.com/fbbdev/rendirt/tree/master/examples)
