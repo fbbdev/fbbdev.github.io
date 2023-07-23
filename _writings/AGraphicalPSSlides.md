@@ -7,7 +7,7 @@ category: talks
 date: 20230515
 
 links:
-    - type: pdf
+    - type: slides
       url: /writings/downloads/AGraphicalPSSlides.pdf
 ---
 

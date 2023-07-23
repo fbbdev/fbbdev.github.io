@@ -7,7 +7,7 @@ category: talks
 date: 20230616
 
 links:
-    - type: pdf
+    - type: slides
       url: /writings/downloads/GS4invariantsSlides.pdf
 ---
 
