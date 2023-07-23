@@ -1,5 +1,5 @@
 ---
-title: Human and christian love in the thought Augustine&nbsp;of&nbsp;Hippo and Thomas&nbsp;Aquinas
+title: Human and christian love in the thought Augustine of&nbsp;Hippo and Thomas Aquinas
 excerpt: Undergraduate thesis for the Bachelor degree in Philosophy (in Italian)
 category: dissertation
 date: 20170307
@@ -21,7 +21,7 @@ consider for example the Rationalist and Romantic schools of philosophy.
 
 This undergraduate dissertation in Medieval Philosophy (in Italian)
 investigates the concept of love in the works of medieval philosophers
-and theologians Augustine of&nbsp;Hippo (354–430 AD) and Thomas&nbsp;Aquinas
+and theologians Augustine of&nbsp;Hippo (354–430 AD) and Thomas Aquinas
 (1225–1274 AD). While they often offer differing perspectives on the same
 subjects, both thinkers present love as a unifying concept, tying together
 the three spheres of life: the biological, the psychological and the
