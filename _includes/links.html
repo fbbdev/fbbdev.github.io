@@ -24,6 +24,11 @@
         {% assign link_label = 'Web app' %}
         {% assign link_title = 'Open web application' %}
         {% assign link_target = '_blank' %}
+    {% when 'pdf' %}
+        {% assign link_icon = 'ion-ios-book-outline' %}
+        {% assign link_label = 'Download PDF' %}
+        {% assign link_title = link_label %}
+        {% assign link_target = '_blank' %}
 {% endcase %}<a class="{{ link.class | default: link_class | default: 'button' }}" href="{{ link.url }}"
    {% if link.title or link_title %}title="{{ link.title | default: link_title }}"{% endif %}
    {% if link.target or link_target %}target="{{ link.target | default: link_target }}"{% endif %}>

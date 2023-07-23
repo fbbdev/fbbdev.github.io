@@ -4,8 +4,58 @@ title: Writings
 excerpt: "List of writings by fbbdev"
 stylesheet: item_index
 ---
-{% for writing in site.writings %}
+{% assign sorted_writings = site.writings | sort: "date" | reverse %}
+
+<h1>Research papers</h1>
+{% for writing in sorted_writings %}
+{% if writing.category != 'research' %}{% continue %}{% endif %}
 <article>
+    {% if writing.links %}
+    <aside>
+        {% assign link_class = 'circle' %}
+        {% for link in writing.links %}
+            {% include links.html %}
+        {% endfor %}
+    </aside>
+    {% endif %}
+    <a href="{{ writing.url }}">
+        <h2>{{ writing.title }}</h2>
+        {{ writing.excerpt }}
+    </a>
+</article>
+{% endfor %}
+
+<h1>Talks</h1>
+{% for writing in sorted_writings %}
+{% if writing.category != 'talks' %}{% continue %}{% endif %}
+<article>
+    {% if writing.links %}
+    <aside>
+        {% assign link_class = 'circle' %}
+        {% for link in writing.links %}
+            {% include links.html %}
+        {% endfor %}
+    </aside>
+    {% endif %}
+    <a href="{{ writing.url }}">
+        <h2>{{ writing.title }}</h2>
+        {{ writing.excerpt }}
+    </a>
+</article>
+{% endfor %}
+
+<h1>Dissertations</h1>
+{% for writing in sorted_writings %}
+{% if writing.category != 'dissertation' %}{% continue %}{% endif %}
+<article>
+    {% if writing.links %}
+    <aside>
+        {% assign link_class = 'circle' %}
+        {% for link in writing.links %}
+            {% include links.html %}
+        {% endfor %}
+    </aside>
+    {% endif %}
     <a href="{{ writing.url }}">
         <h2>{{ writing.title }}</h2>
         {{ writing.excerpt }}

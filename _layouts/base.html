@@ -19,6 +19,12 @@
 
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
+    {% if layout.style %}
+        <style>
+            {{ layout.style }}
+        </style>
+    {% endif %}
+
     {% if page.style %}
         <style>
             {{ page.style }}

@@ -1,0 +1,19 @@
+---
+layout: page
+main_class: article
+style: |
+    header {
+        margin: 0 auto;
+        max-width: 800px !important;
+        font-size: 3em !important;
+    }
+---
+<header>
+    {{ page.title }}
+</header>
+{% if page.links %}
+    <aside>{% for link in page.links %}{% include links.html %}{% endfor %}</aside>
+{% endif %}
+<section>
+    {{ content }}
+</section>
