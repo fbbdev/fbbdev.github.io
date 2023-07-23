@@ -1,5 +1,5 @@
 ---
-title: Human and christian love in the thought Augustine of&nbsp;Hippo and Thomas Aquinas
+title: Human and christian love in the thought of Augustine of&nbsp;Hippo and Thomas Aquinas
 excerpt: Undergraduate thesis for the Bachelor degree in Philosophy (in Italian)
 category: dissertation
 date: 20170307
