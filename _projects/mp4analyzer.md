@@ -7,8 +7,6 @@ ordinal: 200
 links:
     - type: website
       url: https://fbbdev.it/mp4analyzer.js
-    - type: docs
-      url: https://github.com/fbbdev/mp4analyzer.js#readme
     - type: github
       url: https://github.com/fbbdev/mp4analyzer.js
 
