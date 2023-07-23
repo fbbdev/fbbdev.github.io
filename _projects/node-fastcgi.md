@@ -1,13 +1,14 @@
 ---
 title: node-fastcgi
 excerpt: "Create FastCGI applications with node.js"
-ordinal: 200
+category: js-libs
+ordinal: 100
 
 links:
     - type: package
       url: https://www.npmjs.com/package/node-fastcgi
     - type: docs
-      url: https://github.com/fbbdev/node-fastcgi/#readme
+      url: https://github.com/fbbdev/node-fastcgi#readme
     - type: github
       url: https://github.com/fbbdev/node-fastcgi
 
@@ -24,13 +25,18 @@ style: |
     }
 ---
 
-**node-fastcgi** is a drop-in replacement for node's http module (server only). It can be used to build FastCGI applications or to convert existing node applications to FastCGI.
+**node-fastcgi** is a drop-in replacement for node's http module (server only).
+It can be used to build FastCGI applications or to convert existing node
+applications to FastCGI.
 
 The implementation is fully compliant with the [FastCGI 1.0 Specification](https://fast-cgi.github.io/spec).
 
-# Usage example
+**node-fastcgi** is distributed under the open source MIT license.
+
+# Usage
 
 ```javascript
+
 var fcgi = require('node-fastcgi');
 
 fcgi.createServer(function(req, res) {

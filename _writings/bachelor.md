@@ -1,13 +1,15 @@
 ---
 title: Human and christian love in the thought of Augustine of&nbsp;Hippo and Thomas Aquinas
 excerpt: Undergraduate thesis for the Bachelor degree in Philosophy (in Italian)
-category: dissertation
+category: dissertations
 date: 20170307
 
 links:
     - type: pdf
       url: /writings/downloads/tesi_triennale.pdf
 ---
+
+# Abstract
 
 It is often believed that christian thinkers, and especially medieval ones,
 conceive of love either — negatively — as a contemptible passion, a morally

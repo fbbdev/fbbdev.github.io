@@ -1,7 +1,8 @@
 ---
 title: FastCGI spec website
 excerpt: "Unofficial hosting for the FastCGI spec"
-ordinal: 210
+category: docs
+ordinal: 100
 
 links:
     - type: website

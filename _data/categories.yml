@@ -1,0 +1,17 @@
+projects:
+  - id: cpp-libs
+    title: C++ Libraries
+  - id: js-libs
+    title: Javascript Libraries
+  - id: apps
+    title: Applications
+  - id: docs
+    title: Documentation
+
+writings:
+  - id: research
+    title: Research papers
+  - id: talks
+    title: Talks
+  - id: dissertations
+    title: Dissertations

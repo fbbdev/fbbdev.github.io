@@ -11,6 +11,8 @@ links:
       url: /writings/downloads/GS4invariants.pdf
 ---
 
+# Abstract
+
 We discuss the problem of finding non-trivial invariants of non-deterministic, symmetric
 cut-reduction procedures in the classical sequent calculus. We come to the conclusion
 that (an enriched version of) the propositional fragment of GS4 — i.e. the one-sided

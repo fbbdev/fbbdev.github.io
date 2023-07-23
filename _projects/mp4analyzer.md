@@ -1,11 +1,14 @@
 ---
 title: mp4analyzer.js
 excerpt: "JavaScript MP4/M4A/MOV file parser"
-ordinal: 300
+category: js-libs
+ordinal: 200
 
 links:
     - type: website
       url: https://fbbdev.it/mp4analyzer.js
+    - type: docs
+      url: https://github.com/fbbdev/mp4analyzer.js#readme
     - type: github
       url: https://github.com/fbbdev/mp4analyzer.js
 
@@ -47,4 +50,4 @@ performing a costly upload operation.
 
 You can find a demo and detailed documentation on [the project's website]({% for link in page.links %}{% if link.type == 'website' %}{{ link.url }}{% break %}{% endif %}{% endfor %}).
 
-mp4analyzer.js is distributed under the open source MIT license.
+**mp4analyzer.js** is distributed under the open source MIT license.

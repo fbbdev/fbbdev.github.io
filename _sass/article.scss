@@ -38,6 +38,10 @@
         -ms-hyphens: auto;
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
+
+        & > h1:first-child {
+            margin-top: 0;
+        }
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -74,7 +78,7 @@
         font-size: 1.2em;
     }
 
-    p, ul, ol, div, hr, figure, table {
+    p, ul, ol, div:not(.highlight), hr, figure, table {
         margin: 0;
         margin-bottom: $par-spacing;
 
@@ -86,7 +90,8 @@
     }
 
     pre {
-        line-height: 1;
+        margin: 2px; /* This is necessary to avoid scrollbars on Firefox */
+        line-height: 1.2;
     }
 
     hr {
@@ -106,7 +111,7 @@
 
         figcaption {
             display: block;
-            margin-top: 5px;
+            margin: 5px $par-spacing 0;
             font-style: italic;
         }
     }

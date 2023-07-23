@@ -1,13 +1,14 @@
 ---
 title: rendirt
 excerpt: "A C++ library for offline rendering of 3D model thumbnails"
-ordinal: 80
+category: cpp-libs
+ordinal: 100
 
 links:
     - type: docs
-      url: https://github.com/fbbdev/rendirt/#readme
+      url: https://github.com/fbbdev/rendirt#readme
     - type: github
-      url: https://github.com/fbbdev/rendirt/
+      url: https://github.com/fbbdev/rendirt
 
 style: |
   #pictures {
@@ -23,7 +24,7 @@ style: |
   }
 ---
 
-*rendirt* is a bare-bones C++ software rendering library for triangle meshes.
+**rendirt** is a bare-bones C++ software rendering library for triangle meshes.
 The library is able to load STL models both in binary and ASCII format.
 In fact, offline rendering of STL model thumbnails is its primary use case.
 From this point of view, *rendirt* means *render it*.
@@ -37,6 +38,8 @@ Still, the debug build manages to render ~400k tris at 800x600 px in less than
 1 second and simpler models in less than 100 milliseconds. It becomes about one
 order of magnitude faster when compiler-optimized. *(DISCLAIMER: those are not
 accurate measures, just average execution times to give an idea)*.
+
+**rendirt** is distributed under the open source MIT license.
 
 # Example pictures
 

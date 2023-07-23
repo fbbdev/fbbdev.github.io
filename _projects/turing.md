@@ -1,16 +1,44 @@
 ---
 title: Turing machine analyzer
 excerpt: "A visualizer and analyzer of Turing Machines, geared towards teachers and students of computer science"
+category: apps
 ordinal: 100
 
 links:
     - type: application
       url: https://fbbdev.it/turing/
     - type: docs
-      url: https://github.com/fbbdev/turing/#readme
+      url: https://github.com/fbbdev/turing#readme
     - type: github
-      url: https://github.com/fbbdev/turing/
+      url: https://github.com/fbbdev/turing
 ---
+
+This is a browser-based application providing a graphical environment in which
+one may design, simulate and analyze the structure and behaviour of
+[Turing machines](https://en.wikipedia.org/wiki/Turing_machine). A fully
+functional build is available [here](https://fbbdev.it/turing/). Useful
+information and examples can be found in the
+[README](https://github.com/fbbdev/turing#readme) file on GitHub.
+
+<figure>
+  <img src="/img/turing/screenshot.png">
+  <figcaption>
+    A screenshot of the user interface, showing the transition diagram
+    of a Turing machine (in the middle), a textual description of the
+    transition table (on the left) and the tape with some symbols on it
+    (at the bottom).
+  </figcaption>
+</figure>
+
+The application is currently a work in progress: low-level design, visualization
+and simulation features are fully implemented; a high-level design language and
+advanced analysis tools are planned. A roadmap is available
+[here](https://github.com/fbbdev/turing#roadmap).
+
+[Source code](https://github.com/fbbdev/turing) for the application is
+distributed as free software under the GPL license, version 3 or later.
+
+# Motivation
 
 Teachers and tutors of theoretical computer science courses often face the dual
 problem of *(a)* helping novice students to become acquainted with the somewhat
@@ -28,7 +56,3 @@ analysis of their behavior in terms of a higher level description language.
 It grew out of dissatisfaction with the tools already available on the internet,
 which are either too inflexible (i.e. limited in their functionality) or sport
 outdated and/or uncomfortable user interfaces.
-
-This is a browser-based application. A fully functional build is available
-[here](https://fbbdev.it/turing/). Useful information and examples can be found
-in the [README](https://github.com/fbbdev/turing/#readme) file on GitHub.
