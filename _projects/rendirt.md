@@ -24,24 +24,24 @@ style: |
   }
 ---
 
-**rendirt** is a bare-bones C++ software rendering library for triangle meshes.
+_rendirt_ is a bare-bones C++ software rendering library for triangle meshes.
 The library is able to load STL models both in binary and ASCII format.
 In fact, offline rendering of STL model thumbnails is its primary use case.
-From this point of view, *rendirt* means *render it*.
+From this point of view, _rendirt_ means _render it_.
 
-**But beware!** *rendirt* also stands for *dirty renderer*. This thing is as
+**But beware!** _rendirt_ also stands for _dirty renderer_. This thing is as
 simple as possible, quite inflexible and mostly unoptimized. Clocking in
 at ~400 LOCs, it does its (very limited) work in reasonable time and
 that's all. This is not meant to be an example of state-of-the-art graphics
 programming. Decent speed is only achieved with compiler optimizations enabled.
 Still, the debug build manages to render ~400k tris at 800x600 px in less than
 1 second and simpler models in less than 100 milliseconds. It becomes about one
-order of magnitude faster when compiler-optimized. *(DISCLAIMER: those are not
-accurate measures, just average execution times to give an idea)*.
+order of magnitude faster when compiler-optimized. _(DISCLAIMER: those are not
+accurate measures, just average execution times to give an idea)_.
 
-**rendirt** is distributed under the open source MIT license.
+_rendirt_ is distributed under the open source [MIT license](https://github.com/fbbdev/rendirt/blob/master/LICENSE).
 
-# Example pictures
+## Example pictures
 
 <div id="pictures">
   <figure>
@@ -62,7 +62,7 @@ accurate measures, just average execution times to give an idea)*.
   </figure>
 </div>
 
-# Usage
+## Usage
 
 This is the bare minimum to obtain an image. For more details and variations
 look into the [examples](https://github.com/fbbdev/rendirt/tree/master/examples)

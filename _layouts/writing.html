@@ -9,7 +9,7 @@ style: |
     }
 ---
 <header>
-    {{ page.title }}
+    <h1>{{ page.title }}</h1>
     {% if page.links %}
         <aside>{% for link in page.links %}{% include links.html %}{% endfor %}</aside>
     {% endif %}

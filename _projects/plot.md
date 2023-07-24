@@ -26,7 +26,7 @@ style: |
   }
 ---
 
-**plot** is a header-only terminal plotting library for C++14 and later. It is
+_plot_ is a header-only terminal plotting library for C++14 and later. It is
 based on the same idea as the awesome [Drawille](https://github.com/asciimoo/drawille)
 and [UnicodePlots.jl](https://github.com/JuliaPlots/UnicodePlots.jl) libraries:
 using Unicode Braille characters to display complex graphics in any terminal.
@@ -44,9 +44,9 @@ plotting API design. Moreover, at the moment C++ is quite marginal as a
 language for data processing, and support for Braille characters in terminal
 fonts is generally spotty and unreliable.
 
-**plot** is distributed under the open source MIT license.
+_plot_ is distributed under the open source [MIT license](https://github.com/fbbdev/plot/blob/master/LICENSE).
 
-# Demo
+## Demo
 
 Here is a youtube video demonstrating the capabilities of this library. For code
 examples visit [the repository](https://github.com/fbbdev/plot/tree/master/examples)

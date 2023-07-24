@@ -7,7 +7,8 @@ stylesheet: item_index
 {% assign sorted_writings = site.writings | sort: "date" | reverse %}
 
 {% for category in site.data.categories.writings %}
-    <h1>{{ category.title }}</h1>
+<section>
+    <h2>{{ category.title }}</h2>
     {% for writing in sorted_writings %}
         {% if writing.category != category.id %}{% continue %}{% endif %}
         <article>
@@ -20,9 +21,10 @@ stylesheet: item_index
             </aside>
             {% endif %}
             <a href="{{ writing.url }}">
-                <h2>{{ writing.title }}</h2>
+                <h3>{{ writing.title }}</h3>
                 {{ writing.excerpt }}
             </a>
         </article>
     {% endfor %}
+</section>
 {% endfor %}

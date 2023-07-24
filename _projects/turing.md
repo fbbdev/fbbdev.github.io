@@ -36,14 +36,15 @@ advanced analysis tools are planned. A roadmap is available
 [here](https://github.com/fbbdev/turing#roadmap).
 
 [Source code](https://github.com/fbbdev/turing) for the application is
-distributed as free software under the GPL license, version 3 or later.
+distributed as free software under the [GPL license](https://github.com/fbbdev/turing/blob/main/LICENSE),
+version 3 or later.
 
-# Motivation
+## Motivation
 
 Teachers and tutors of theoretical computer science courses often face the dual
-problem of *(a)* helping novice students to become acquainted with the somewhat
+problem of _(a)_ helping novice students to become acquainted with the somewhat
 counterintuitive discipline of Turing machine design and interpretation, and on
-the other hand *(b)* interpreting and assessing their students' output which
+the other hand _(b)_ interpreting and assessing their students' output which
 — due to the aforementioned lack of intuition — can often get quite convoluted
 itself.
 

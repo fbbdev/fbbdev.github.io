@@ -11,7 +11,7 @@ links:
       url: https://github.com/fbbdev/opt
 ---
 
-**opt** is a bare-bones command line argument parsing library for C++14 and later.
+_opt_ is a bare-bones command line argument parsing library for C++14 and later.
 It supports a non-standard key-value option style similar to the [dd program](https://linux.die.net/man/1/dd)
 from coreutils, or the well-known [iproute2 command suite](https://wiki.linuxfoundation.org/networking/iproute2).
 Clever usage of positional and keyword arguments can result in extremely
@@ -33,9 +33,9 @@ Usage: ./run [help] [cmd=]COMMAND [mode=](oneshot|after|repeat|every)
   [stop_on_error] [until=TIME] [times=INT]
 ```
 
-**opt** is distributed under the open source MIT license.
+_opt_ is distributed under the open source [MIT license](https://github.com/fbbdev/opt/blob/master/LICENSE).
 
-# Argument types
+## Argument types
 
 Positional arguments and boolean flags are supported. Numeric values can be
 followed by SI unit prefixes (e.g. `2.4k` -> int: 2400, float: 2.4e+3). Supported
@@ -46,7 +46,7 @@ also supported, where `T` is one of the supported types. Additional types can
 be supported by specializing a static method. For more information, [read the
 documentation](https://github.com/fbbdev/opt#readme).
 
-# Usage
+## Usage
 
 Option syntax for the hypothetical `run` command shown above can be defined
 through the following C++ code:

@@ -13,7 +13,7 @@ links:
       url: https://github.com/fbbdev/node-fastcgi
 
 style: |
-    .article > header {
+    h1 {
         overflow-wrap: break-word;
         hyphens: auto;
         -ms-hyphens: auto;
@@ -22,15 +22,15 @@ style: |
     }
 ---
 
-**node-fastcgi** is a drop-in replacement for node's http module (server only).
+_node-fastcgi_ is a drop-in replacement for node's http module (server only).
 It can be used to build FastCGI applications or to convert existing node
 applications to FastCGI.
 
 The implementation is fully compliant with the [FastCGI 1.0 Specification](https://fast-cgi.github.io/spec).
 
-**node-fastcgi** is distributed under the open source MIT license.
+_node-fastcgi_ is distributed under the open source [MIT license](https://github.com/fbbdev/node-fastcgi/blob/master/LICENSE).
 
-# Usage
+## Usage
 
 ```javascript
 

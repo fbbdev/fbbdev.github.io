@@ -7,7 +7,8 @@ stylesheet: item_index
 {% assign sorted_projects = site.projects | sort: "ordinal" %}
 
 {% for category in site.data.categories.projects %}
-    <h1>{{ category.title }}</h1>
+<section>
+    <h2>{{ category.title }}</h2>
     {% for project in sorted_projects %}
         {% if project.category != category.id %}{% continue %}{% endif %}
         <article>
@@ -20,27 +21,30 @@ stylesheet: item_index
             </aside>
             {% endif %}
             <a href="{{ project.url }}">
-                <h2>{{ project.title }}</h2>
+                <h3>{{ project.title }}</h3>
                 {{ project.excerpt }}
             </a>
         </article>
     {% endfor %}
+</section>
 {% endfor %}
 
-<h1>Online tools</h1>
-{% for tool in site.tools %}
-<article>
-    {% if tool.links %}
-    <aside>
-        {% assign link_class = 'circle' %}
-        {% for link in tool.links %}
-            {% include links.html %}
-        {% endfor %}
-    </aside>
-    {% endif %}
-    <a href="{{ tool.url }}">
-        <h2>{{ tool.title }}</h2>
-        {{ tool.excerpt }}
-    </a>
-</article>
-{% endfor %}
+<section>
+    <h2>Online tools</h2>
+    {% for tool in site.tools %}
+    <article>
+        {% if tool.links %}
+        <aside>
+            {% assign link_class = 'circle' %}
+            {% for link in tool.links %}
+                {% include links.html %}
+            {% endfor %}
+        </aside>
+        {% endif %}
+        <a href="{{ tool.url }}">
+            <h2>{{ tool.title }}</h2>
+            {{ tool.excerpt }}
+        </a>
+    </article>
+    {% endfor %}
+</section>
