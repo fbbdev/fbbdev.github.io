@@ -59,7 +59,7 @@ body > nav:first-of-type {
 }
 
 .article {
-    padding-top: $navbar-margin + 52px;
+    padding-top: 52px; // height of a navbar button including border
 }
 
 .article > header:first-of-type > aside {
