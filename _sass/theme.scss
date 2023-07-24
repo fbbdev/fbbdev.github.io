@@ -17,12 +17,12 @@ $navbar-font-size: 1.5em;
 $navbar-margin: 10px;
 $navbar-spacing: 10px;
 
-$text-header-margin: 40px;
+$par-spacing: 25px;
+$text-header-margin: 2*$par-spacing;
 $text-header-font-size: 4em;
 $text-header-stroke: .3px $bg;
 $text-width: 600px;
-$text-margin: 40px;
-$par-spacing: 25px;
+$text-margin: 2*$par-spacing;
 
 $table-border: 1px solid #ddd;
 

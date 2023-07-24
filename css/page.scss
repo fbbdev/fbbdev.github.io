@@ -48,9 +48,7 @@ body > nav:first-of-type {
 
             width: auto;
             border-radius: 25px;
-        }
 
-        &:nth-of-type(1) {
             -webkit-text-stroke: .5px;
         }
 
@@ -60,54 +58,16 @@ body > nav:first-of-type {
     }
 }
 
-@media (max-width: 600px) {
-    body > nav:first-of-type {
-        text-align: center;
-    }
-}
-
-@media (max-width: 360px) {
-    body > nav:first-of-type > a {
-        margin-left: $navbar-spacing/2;
-    }
-}
-
 .article {
-    padding-top: (2*$navbar-margin + 50px - $text-header-margin);
-}
-
-@media (min-height: 600px) and (max-width: 1000px) {
-    .article {
-        padding-top: (2*$navbar-margin + 50px);
-    }
-}
-
-@media (max-height: 599px) and (max-width: 1000px) {
-    .article > header:first-of-type {
-        margin-bottom: $navbar-margin;
-    }
-}
-
-@media (max-width: 480px) {
-    .article > header:first-of-type {
-        padding-left: $navbar-margin;
-        padding-right: $navbar-margin;
-    }
-}
-
-@media (max-width: 480px), (max-height: 480px) {
-    .article p, .article ul, .article ol, .article div, .article hr, .article table {
-        line-height: 1.5;
-    }
+    padding-top: $navbar-margin + 52px;
 }
 
 .article > aside:first-of-type {
-    margin: 0;
-    margin-bottom: $par-spacing;
+    margin: 0 $text-margin $par-spacing;
     text-align: center;
 
     & > a.button {
-        margin: 5px;
+        margin: $navbar-spacing/2;
 
         font-size: 1.5em;
 
@@ -128,6 +88,51 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+@media (max-width: 599px) {
+    body > nav:first-of-type {
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    body > nav:first-of-type > a {
+        margin-left: $navbar-spacing/2;
+    }
+
+    .article > aside:first-of-type > a.button {
+        margin: $navbar-spacing/4;
+    }
+}
+
+@media (max-height: 599px) {
+    .article > header:first-of-type {
+        margin-top: $par-spacing;
+        margin-bottom: $par-spacing;
+    }
+}
+
+@media (max-width: 480px) {
+    .article {
+        & > header:first-of-type {
+            padding: 0 $par-spacing;
+        }
+
+        & > aside:first-of-type {
+            margin: 0 $par-spacing $par-spacing;
+        }
+
+        & > section {
+            padding: 0 $par-spacing;
+        }
+    }
+}
+
+@media (max-width: 480px), (max-height: 480px) {
+    .article p, .article ul, .article ol, .article div, .article hr, .article table {
+        line-height: 1.5;
+    }
 }
 
 /* fix iOS bug not displaying 100vh correctly */

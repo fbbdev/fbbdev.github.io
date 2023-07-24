@@ -23,13 +23,16 @@
 }
 
 .article {
+    margin: 0;
+    padding: 0;
+
     & > header:first-of-type {
         @include text-header;
     }
 
     & > section {
         margin: 0 auto;
-        padding: 0 $text-margin $par-spacing;
+        padding: 0 $text-margin;
 
         max-width: $text-width;
 

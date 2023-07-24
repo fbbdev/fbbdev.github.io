@@ -14,14 +14,11 @@ links:
 
 style: |
     .article > header {
-        -ms-word-break: break-all;
-        word-break: break-all;
-
-        word-break: break-word;
-
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
+        overflow-wrap: break-word;
         hyphens: auto;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
     }
 ---
 
