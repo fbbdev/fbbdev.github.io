@@ -62,8 +62,13 @@ body > nav:first-of-type {
     padding-top: $navbar-margin + 52px;
 }
 
-.article > aside:first-of-type {
-    margin: 0 $text-margin $par-spacing;
+.article > header:first-of-type > aside {
+    display: block;
+    margin: $par-spacing $text-margin 0;
+
+    font-family: $font;
+    font-size: $font-size;
+    font-weight: $font-weight;
     text-align: center;
 
     & > a.button {

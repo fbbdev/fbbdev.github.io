@@ -10,10 +10,10 @@ style: |
 ---
 <header>
     {{ page.title }}
+    {% if page.links %}
+        <aside>{% for link in page.links %}{% include links.html %}{% endfor %}</aside>
+    {% endif %}
 </header>
-{% if page.links %}
-    <aside>{% for link in page.links %}{% include links.html %}{% endfor %}</aside>
-{% endif %}
 <section>
     {{ content }}
 </section>
