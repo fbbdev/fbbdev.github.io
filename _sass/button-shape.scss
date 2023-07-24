@@ -8,14 +8,17 @@
     border: 1px solid $color;
     border-radius: 1.5em;
 
-    color: $color;
-
     background: $background;
+    color: $color;
 
     font-size: 1em;
 
     cursor: pointer;
     @include no-select;
+
+    * {
+        pointer-events: none;
+    }
 
     &:link, &:active, &:visited {
         color: $color;

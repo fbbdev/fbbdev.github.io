@@ -51,10 +51,8 @@ body > header:first-of-type {
                 }
             }
 
-            &:nth-of-type(1) {
-                i {
-                    font-size: 35px;
-                }
+            &:nth-of-type(1) > i {
+                font-size: 35px;
             }
         }
 

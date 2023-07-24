@@ -48,6 +48,12 @@ a.circle {
     background: $bg;
     color: $header-color;
 
+    cursor: pointer;
+    @include no-select;
+
+    * {
+        pointer-events: none;
+    }
 
     &:link, &:active, &:visited {
         text-decoration: none;
@@ -60,6 +66,10 @@ a.circle {
 
     & > i.ion {
         font-size: 25px;
+    }
+
+    & > i.ion-ios-person-outline {
+        font-size: 30px;
     }
 
     & > i.ion + span {
