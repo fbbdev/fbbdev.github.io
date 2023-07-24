@@ -1,41 +1,20 @@
-@mixin text-header($margin: $text-header-margin,
-                   $max-width: $text-header-width,
-                   $color: $header-color,
-                   $font: $header-font,
-                   $weight: $header-weight,
-                   $size: $text-header-font-size,
-                   $stroke: $text-header-stroke) {
-    margin: $margin auto $margin;
-    padding: 0 $margin;
-
-    max-width: $max-width;
-
-    color: $color;
-
-    text-align: center;
-
-    font-family: $font;
-    font-weight: $weight;
-    font-size: $size;
-    -webkit-text-stroke: $stroke;
-}
-
-.title {
-    @include text-header;
-}
-
 .article {
     margin: 0;
     padding: 0;
 
     & > header:first-of-type {
-        @include text-header;
+        margin: $text-header-margin auto $text-header-margin;
+        padding: 0 $text-header-margin;
+        max-width: $text-header-width;
 
         & > h1 {
-            margin: 0;
-            padding: 0;
-            font: inherit;
-            text-align: inherit;
+            text-align: center;
+
+            color: $header-color;
+            font-family: $header-font;
+            font-weight: $header-weight;
+            font-size: $text-header-font-size;
+            -webkit-text-stroke: $text-header-stroke;
         }
     }
 
