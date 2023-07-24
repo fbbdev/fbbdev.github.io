@@ -16,7 +16,7 @@ Normale Superiore in Pisa, Italy, on May 15<sup>th</sup>, 2023. They present som
 work (still in progress) about a graphical proof-system for classical logic (in the style
 of proof-nets).
 
-# Abstract
+## Abstract
 
 We recall briefly the origins and significance of the problem of proof identity
 in classical logic, then proceed to show why extensional approaches are bound

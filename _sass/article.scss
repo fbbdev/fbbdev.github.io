@@ -1,12 +1,14 @@
 @mixin text-header($margin: $text-header-margin,
+                   $max-width: $text-header-width,
                    $color: $header-color,
                    $font: $header-font,
                    $weight: $header-weight,
                    $size: $text-header-font-size,
                    $stroke: $text-header-stroke) {
-    margin-top: $margin;
-    margin-bottom: $margin;
+    margin: $margin auto $margin;
     padding: 0 $margin;
+
+    max-width: $max-width;
 
     color: $color;
 
@@ -48,6 +50,10 @@
         -ms-hyphens: auto;
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
+
+        & > h2:first-child {
+            margin-top: 0;
+        }
     }
 
     h2, h3, h4, h5, h6 {

@@ -17,7 +17,7 @@ content of the talk originated from some [unpublished notes](GS4invariants). It 
 the same work I presented at the ASL Logic Colloquium in Milan, but the slides are much more
 detailed.
 
-# Abstract
+## Abstract
 
 I recall briefly the peculiar features of cut-reduction procedures in classical
 sequent calculus and the challenges they pose to the development of a satisfying

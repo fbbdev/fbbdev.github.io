@@ -9,7 +9,7 @@ links:
       url: /writings/downloads/tesi_magistrale.pdf
 ---
 
-# Abstract
+## Abstract
 
 This master's thesis (in Italian) explores various normalization procedures
 (also known as cut-elimination procedures, from Gentzen's original work on the
@@ -27,7 +27,7 @@ relevant literature. Although my work is similar to theirs even in very small
 details, it was an independent rediscovery, and in fact some technical choices
 helped me avoid a (non-critical) mistake that was present in&nbsp;\[[5](#UB)\].
 
-# References
+## References
 
 <a id="AT14">[1]</a> Abrusci, V.M., and Tortora de Falco, L. _Logica: Volume&nbsp;1
 — Dimostrazioni e modelli al primo ordine._ Springer Milan (2014)<br>

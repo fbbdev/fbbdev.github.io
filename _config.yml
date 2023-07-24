@@ -26,12 +26,12 @@ defaults:
           path: ""
           type: projects
       values:
-          layout: project
+          layout: item
     - scope:
           path: ""
           type: tools
       values:
-          layout: page
+          layout: item
 
 markdown: kramdown
 sass:

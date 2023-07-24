@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Dot Matrix Bot
 excerpt: "A Telegram inline bot for generating dot matrix display GIFs"
 

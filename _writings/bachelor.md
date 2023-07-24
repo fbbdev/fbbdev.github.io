@@ -9,7 +9,7 @@ links:
       url: /writings/downloads/tesi_triennale.pdf
 ---
 
-# Abstract
+## Abstract
 
 It is often believed that christian thinkers, and especially medieval ones,
 conceive of love either — negatively — as a contemptible passion, a morally

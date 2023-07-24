@@ -11,7 +11,7 @@ links:
       url: /writings/downloads/GS4invariants.pdf
 ---
 
-# Abstract
+## Abstract
 
 We discuss the problem of finding non-trivial invariants of non-deterministic, symmetric
 cut-reduction procedures in the classical sequent calculus. We come to the conclusion
