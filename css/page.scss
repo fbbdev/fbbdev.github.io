@@ -113,6 +113,10 @@ footer {
         margin-top: $par-spacing;
         margin-bottom: $par-spacing;
     }
+
+    .article h2 {
+        margin-top: $par-spacing;
+    }
 }
 
 @media (max-width: 480px) {
