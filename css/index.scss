@@ -4,9 +4,16 @@
 @import 'base';
 
 body > header:first-of-type {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: $footer-height;
 
-    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 
     color: $header-color;
 
@@ -17,6 +24,9 @@ body > header:first-of-type {
     @include no-select;
 
     & > h1 {
+        margin: 0;
+        padding: 0;
+
         font-size: 5em;
         font-weight: inherit;
         -webkit-text-stroke: .45px $bg;
@@ -70,30 +80,10 @@ body > header:first-of-type {
             -webkit-text-stroke: .5px;
         }
     }
-
-    & > .scroll-down {
-        position: absolute;
-        bottom: 0px;
-
-        margin: 0;
-        padding: 0;
-        padding-bottom: 20px;
-
-        width: 100%;
-
-        text-align: center;
-
-        pointer-events: none;
-
-        & > a {
-            line-height: 60px;
-            pointer-events: all;
-        }
-    }
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
@@ -102,15 +92,6 @@ footer {
 @media (min-width: 600px) and (min-height: 600px) {
     body > header:first-of-type {
         & > h1 {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-
-            @include transform(translate(-50%, -50%));
-
-            margin: 0;
-            padding: 0;
-
             width: 400px;
             height: 400px;
             line-height: 400px;
@@ -119,18 +100,21 @@ footer {
         }
 
         & > .links {
-            width: 100%;
-            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
 
             & > a {
-                display: inline-block;
+                display: block;
 
                 position: absolute;
                 left: 50%;
                 top: 50%;
 
                 & > span {
-                    display: inline-block;
+                    display: block;
 
                     position: absolute;
                     left: 100%;
@@ -180,9 +164,6 @@ footer {
         text-align: center;
 
         & > h1 {
-            margin: 40px 35px;
-            margin-bottom: 0;
-
             font-size: 4em;
             -webkit-text-stroke-width: .3px;
         }
@@ -200,86 +181,10 @@ footer {
     }
 }
 
-@media (max-height: 459px) {
-    body > header:first-of-type > h1 {
-            margin-top: 20px;
-    }
-}
-
-@media (max-height: 439px) {
-    body > header:first-of-type > .links {
-        margin-top: 0;
-    }
-}
-
-@media (max-height: 419px) {
+@media (max-height: 420px) {
     body > header:first-of-type > .links > a {
         padding: 0 5px;
-        width: 100px;
+        width: 110px;
         text-align: center;
-
-        & > span {
-            display: inline-block;
-        }
-    }
-}
-
-@media (max-height: 279px) {
-    body > header:first-of-type {
-        & > h1 {
-            margin-top: 0;
-        }
-
-        & > .scroll-down > a {
-            width: 30px;
-            height: 30px;
-            line-height: 35px;
-
-            & > i.ion {
-                font-size: 15px;
-            }
-        }
-    }
-}
-
-/* fix iOS bug not displaying 100vh correctly */
-/* ipad */
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape),
-       only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: landscape) {
-    body > header:first-of-type {
-        height: 768px;
-    }
-}
-
-@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait),
-       only screen and (device-width: 1024px) and (device-height: 768px) and (orientation: portrait) {
-    body > header:first-of-type {
-        height: 1024px;
-    }
-}
-
-/* iphone5 and iphone4 landscape */
-@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
-       only screen and (device-width: 568px) and (device-height: 320px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
-       only screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio : 2),
-       only screen and (device-width: 480px) and (device-height: 320px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    body > header:first-of-type {
-        height: 320px;
-    }
-}
-
-/* iphone5 portrait */
-@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2),
-       only screen and (device-width: 568px) and (device-height: 320px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-    body > header:first-of-type {
-        height: 568px;
-    }
-}
-
-/* iphone4 portrait */
-@media only screen and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio : 2),
-       only screen and (device-width: 480px) and (device-height: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    body > header:first-of-type {
-        height: 480px;
     }
 }
