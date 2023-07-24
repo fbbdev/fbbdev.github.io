@@ -64,7 +64,7 @@ body > nav:first-of-type {
 
 .article > header:first-of-type > aside {
     display: block;
-    margin: $par-spacing $text-margin 0;
+    margin: $par-spacing 0 0;
 
     font-family: $font;
     font-size: $font-size;
@@ -106,7 +106,7 @@ footer {
         margin-left: $navbar-spacing/2;
     }
 
-    .article > aside:first-of-type > a.button {
+    .article > header:first-of-type > aside > a.button {
         margin: $navbar-spacing/4;
     }
 }
@@ -122,10 +122,6 @@ footer {
     .article {
         & > header:first-of-type {
             padding: 0 $par-spacing;
-        }
-
-        & > aside:first-of-type {
-            margin: 0 $par-spacing $par-spacing;
         }
 
         & > section {
