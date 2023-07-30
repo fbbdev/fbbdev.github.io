@@ -62,14 +62,14 @@ body > nav:first-of-type {
     padding-top: 52px; // height of a navbar button including border
 }
 
-.article > header:first-of-type > aside {
+.links {
     display: block;
-    margin: $par-spacing 0 0;
+    margin: ($par-spacing - $navbar-spacing) 0 0;
 
     text-align: center;
 
     & > a.button {
-        margin: $navbar-spacing/2;
+        margin: $navbar-spacing $navbar-spacing/2 0;
 
         font-size: 1.5em;
 
@@ -96,6 +96,13 @@ footer {
     body > nav:first-of-type {
         text-align: center;
     }
+
+    .article figure {
+        &.float-left, &.float-right {
+            margin: $par-spacing auto;
+            float: none;
+        }
+    }
 }
 
 @media (max-width: 360px) {
@@ -103,8 +110,12 @@ footer {
         margin-left: $navbar-spacing/2;
     }
 
-    .article > header:first-of-type > aside > a.button {
-        margin: $navbar-spacing/4;
+    .links {
+        margin-top: $par-spacing - ($navbar-spacing/2);
+
+        & > a.button {
+            margin: $navbar-spacing/2 $navbar-spacing/4 0;
+        }
     }
 }
 
