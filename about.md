@@ -54,7 +54,7 @@ presence.
 a distance learning platform targeted to musicians and optimized for high-quality audio.
 
 **From 2019 onward** I've been developing and maintaining custom management software for
-a local businesses specializing in vine plants. The software tracks orders, incoming and
+a local business specializing in vine plants. The software tracks orders, incoming and
 outgoing shipments and warehouse status.
 
 **From 2014 to 2020** I've tutored privately students in Computer Science from the universities
