@@ -5,7 +5,7 @@ excerpt: "Personal information and contact info"
 ---
 
 <figure title="A bad photo of myself ;)" class="float-right" style="width: 250px; height: 300px; margin-bottom: 25px;">
-    <img style="object-position: bottom;" src="/img/me.jpg">
+    <img style="object-position: bottom;" src="/img/me.webp">
 </figure>
 
 Hello! I am Fabio Massaioli (a.k.a. _fbbdev_), a freelance software developer and PhD candidate from Italy.
