@@ -59,9 +59,9 @@ outgoing shipments and warehouse status.
 
 **From 2014 to 2020** I've tutored privately students in Computer Science from the universities
 [Tor Vergata](http://web.uniroma2.it){:target="_blank"} and [Sapienza](https://www.uniroma1.it){:target="_blank"}
-in Roma, Italy. I am proud and honored to have seen some of them [graduate with great results](https://it.linkedin.com/in/lorenzo-bianchi-9449351a2){:target="_blank"}
+in Roma, Italy. I was delighted to see them [graduate with great results](https://it.linkedin.com/in/lorenzo-bianchi-9449351a2){:target="_blank"}
 and/or go on to start [their own careers](https://it.linkedin.com/in/paolo-vezzoso){:target="_blank"}
-in this field.
+in this field, and I am honored to have been able to contribute to their success.
 
 **From 2012 to 2013** I developed and managed software for the annual quality assessment survey
 [at my high school](https://www.scuolamausiliatriceroma.org/), both for the collection phase,
