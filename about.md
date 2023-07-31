@@ -18,7 +18,8 @@ for almost 20 years, first as a hobby and later through freelance work for small
         <h3 style="margin: 0;">Find me</h3>
         <nav class="links">
             <a class="button" title="Email me" href="mailto:me@fbbdev.it" style="margin-left: 0;"><i class="ion ion-ios-email-outline"></i><span>By email</span></a><!--
-        --><a class="button" title="Visit my GitHub profile" href="https://github.com/fbbdev" target="_blank"><i class="ion ion-social-github-outline"></i><span>On GitHub</span></a>
+         --><a class="button" title="Visit my GitHub profile" href="https://github.com/fbbdev" target="_blank"><i class="ion ion-social-github-outline"></i><span>On GitHub</span></a><!--
+         --><a class="button" title="Visit my LinkedIn profile" href="https://www.linkedin.com/in/fbbdev" target="_blank"><i class="ion ion-social-linkedin-outline"></i><span>On LinkedIn</span></a>
         </nav>
     </div>
 </div>
@@ -53,11 +54,12 @@ presence.
 (video-conferencing UI and backend interaction code) at [uwmeeting.com](https://www.uwmeeting.com/),
 a distance learning platform targeted to musicians and optimized for high-quality audio.
 
-**From 2019 onward** I've been developing and maintaining custom management software for
-a local business specializing in vine plants. The software tracks orders, incoming and
-outgoing shipments and warehouse status.
+**From 2019 onward** I've been developing and maintaining dedicated management software for
+[Laura Costanzo](https://www.informazione-aziende.it/Azienda_COSTANZO-LAURA-F389C) a local
+distributor specializing in [vine plants](https://www.vivairauscedo.com). The software
+tracks customers, orders, incoming and outgoing shipments and warehouse status.
 
-**From 2014 to 2020** I've tutored privately students in Computer Science from the universities
+**From 2014 to 2020** I've privately tutored students in Computer Science from the universities
 [Tor Vergata](http://web.uniroma2.it){:target="_blank"} and [Sapienza](https://www.uniroma1.it){:target="_blank"}
 in Roma, Italy. I was delighted to see them [graduate with great results](https://it.linkedin.com/in/lorenzo-bianchi-9449351a2){:target="_blank"}
 and/or go on to start [their own careers](https://it.linkedin.com/in/paolo-vezzoso){:target="_blank"}
