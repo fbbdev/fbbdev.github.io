@@ -50,11 +50,11 @@ My freelance work has been mostly with small and individual businesses, developi
 tools to improve their workflow or helping them set up their internal networking and online
 presence.
 
-**From 2020 onward** I've been developing and maintaining the virtual classroom implementation
+**Since 2020** I've been developing and maintaining the virtual classroom implementation
 (video-conferencing UI and backend interaction code) at [uwmeeting.com](https://www.uwmeeting.com/),
 a distance learning platform targeted to musicians and optimized for high-quality audio.
 
-**From 2019 onward** I've been developing and maintaining dedicated management software for
+**Since 2019** I've been developing and maintaining dedicated management software for
 [Laura Costanzo](https://www.informazione-aziende.it/Azienda_COSTANZO-LAURA-F389C) a local
 distributor specializing in [vine plants](https://www.vivairauscedo.com). The software
 tracks customers, orders, incoming and outgoing shipments and warehouse status.
