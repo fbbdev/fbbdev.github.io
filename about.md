@@ -4,8 +4,12 @@ title: "About me"
 excerpt: "Personal information and contact info"
 ---
 
-<figure title="A bad photo of myself ;)" class="float-right" style="width: 250px; height: 300px; margin-bottom: 25px;">
-    <img style="object-position: bottom;" src="/img/me.webp">
+<figure title="Photo by Alessandra Flora" class="float-right" style="margin-bottom: 25px;">
+    <img alt="A picture of my face"
+        style="object-position: bottom;"
+        width="220" height="290"
+        srcset="/img/me/220.webp 1x,/img/me/440.webp 2x,/img/me/660.webp 3x,/img/me/880.webp 4x"
+        src="/img/me/660.jpg">
 </figure>
 
 Hello! I am Fabio Massaioli (a.k.a. _fbbdev_), a freelance software developer and PhD candidate from Italy.
@@ -37,9 +41,9 @@ philosophy, then I moved on to the philosophy of science and logic.
 ## Research
 
 Structural proof theory studies patterns of reasoning and rules of inference, and the interactions
-that arise between them when they are combined to form complex systems. It employs methods
+that arise between them when they are combined to form complex systems. It borrows techniques
 from the _theory and semantics of programming languages_, as well as from _computability_ and
-_complexity theory_. It contributes back to computer science methods for _improving software
+_complexity theory_. It contributes back to computer science techniques for _improving software
 correctness_, like _typing systems_ and formal methods for _program verification_.
 
 Some of my research output is available at the [writings page](/writings).
