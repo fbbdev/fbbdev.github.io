@@ -7,6 +7,7 @@
 
 @import 'button-shape';
 @import 'circle-shape';
+@import 'icon-size';
 
 body {
     margin: 0;
@@ -64,13 +65,7 @@ a.circle {
         border-color: $link-color-hover;
     }
 
-    & > i.ion {
-        font-size: 25px;
-    }
-
-    & > i.ion-ios-person-outline {
-        font-size: 30px;
-    }
+    @include icon-size;
 
     & > i.ion + span {
         display: none;

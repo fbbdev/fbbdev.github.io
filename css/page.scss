@@ -101,6 +101,9 @@ footer {
         &.float-left, &.float-right {
             margin: $par-spacing auto;
             float: none;
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: min-content;
         }
     }
 }

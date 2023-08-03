@@ -25,5 +25,6 @@ input {
 
 input[type=button], button, .button {
     @include button-shape;
+    @include icon-size;
     font-family: $font;
 }

@@ -1,0 +1,14 @@
+@mixin icon-size {
+    i.ion {
+        font-size: 25px;
+    }
+
+    i.ion-ios-person-outline {
+        font-size: 30px;
+    }
+
+    i.ion-ios-copy-outline,
+    i.ion-ios-filing-outline {
+        font-size: 27px;
+    }
+}

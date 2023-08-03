@@ -32,7 +32,9 @@ article {
             left: 2px;
         }
 
-        & > a > i.ion-ios-paperplane-outline {
+        & > a > i.ion-ios-paperplane-outline,
+        & > a > i.ion-ios-copy-outline,
+        & > a > i.ion-ios-filing-outline {
             top: 2px;
         }
     }
