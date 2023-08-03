@@ -5,7 +5,7 @@ excerpt: "Personal information and contact info"
 ---
 
 <figure class="float-right" style="margin-bottom: 25px;">
-    <img alt="A portrait of myself, by Alessandra Flora"
+    <img alt="Hello, it's me! Photo by Alessandra Flora"
         style="object-position: bottom;"
         width="220" height="290"
         srcset="/img/me/220.webp 1x,/img/me/440.webp 2x,/img/me/660.webp 3x,/img/me/880.webp 4x,/img/me/1875.webp 8.5x"

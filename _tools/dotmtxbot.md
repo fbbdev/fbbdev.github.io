@@ -34,7 +34,7 @@ If you [start the bot](https://t.me/dotmtxbot) and type the command `/help`, it
 will send you a message explaining how to use it and what are its parameters.
 Here is a short video showing the bot in use:
 <figure title="A screen capture showing the bot in use">
-    <video controls muted loop style="max-width: 280px;" alt="A screen capture showing the bot in use">
+    <video controls muted loop style="max-width: 280px;" title="A screen capture showing the bot in use">
         <source src="/img/dotmtxbot/usage.mp4" type="video/mp4">
     </video>
 </figure>
