@@ -15,14 +15,14 @@ while typing a message, like _@gif_ and _@pic_) to generate scrolling dot matrix
 with some text, which then you can send to the current chat.
 
 Dot matrix displays look like this:
-<figure title="A dot matrix display in an underground railway station in Rome, Italy">
-    <img alt="A dot matrix display in an underground railway station in Rome, Italy" src="/img/dotmtxbot/metro.jpg">
+<figure>
+    <img title="A dot matrix display in an underground railway station in Rome, Italy" src="/img/dotmtxbot/metro.jpg">
 </figure>
 
 The output of the bot looks like this:
-<figure title="A dot matrix display GIF with the scrolling message &ldquo;Hello there&rdquo;">
+<figure>
     <video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback
-            alt="A dot matrix display GIF with the scrolling message &ldquo;Hello there&rdquo;">
+            title="A dot matrix display GIF with the scrolling message &ldquo;Hello there&rdquo;">
         <source src="https://dotmtxbot.fbbdev.it/dotmtx.mp4?width=1.3&speed=4&blank=1&text=Hello+there!"
             type="video/mp4">
         <source src="https://dotmtxbot.fbbdev.it/dotmtx.gif?width=1.3&speed=4&blank=1&text=Hello+there!"
