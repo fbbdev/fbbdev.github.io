@@ -5,10 +5,10 @@ category: docs
 ordinal: 100
 
 links:
-    - type: website
-      url: https://fast-cgi.github.io/
-    - type: github
-      url: https://github.com/fast-cgi/spec
+  - type: website
+    url: https://fast-cgi.github.io/
+  - type: github
+    url: https://github.com/fast-cgi/spec
 ---
 
 Since our beloved fastcgi.com died, I recovered the original pages from

@@ -5,10 +5,10 @@ category: cpp-libs
 ordinal: 300
 
 links:
-    - type: docs
-      url: https://github.com/fbbdev/opt#readme
-    - type: github
-      url: https://github.com/fbbdev/opt
+  - type: docs
+    url: https://github.com/fbbdev/opt#readme
+  - type: github
+    url: https://github.com/fbbdev/opt
 ---
 
 _opt_ is a bare-bones command line argument parsing library for C++14 and later.

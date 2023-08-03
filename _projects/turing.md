@@ -5,12 +5,18 @@ category: apps
 ordinal: 100
 
 links:
-    - type: application
-      url: https://fbbdev.it/turing/
-    - type: docs
-      url: https://github.com/fbbdev/turing#readme
-    - type: github
-      url: https://github.com/fbbdev/turing
+  - type: application
+    url: https://fbbdev.it/turing/
+  - type: docs
+    url: https://github.com/fbbdev/turing#readme
+  - type: github
+    url: https://github.com/fbbdev/turing
+
+thumbnail:
+  src: /img/turing/screenshot.png
+  alt: A screenshot of the Turing Machine Analyzer
+  width: 3072
+  height: 1548
 ---
 
 This is a browser-based application providing a graphical environment in which

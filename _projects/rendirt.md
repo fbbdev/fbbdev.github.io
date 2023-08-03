@@ -5,10 +5,10 @@ category: cpp-libs
 ordinal: 100
 
 links:
-    - type: docs
-      url: https://github.com/fbbdev/rendirt#readme
-    - type: github
-      url: https://github.com/fbbdev/rendirt
+  - type: docs
+    url: https://github.com/fbbdev/rendirt#readme
+  - type: github
+    url: https://github.com/fbbdev/rendirt
 
 style: |
   #pictures {
@@ -22,6 +22,12 @@ style: |
     margin: 0;
     max-width: 292px;
   }
+
+thumbnail:
+  src: /img/rendirt/diffuseDirectional.png
+  alt: Example image rendered with the rendirt library
+  width: 800
+  height: 600
 ---
 
 _rendirt_ is a bare-bones C++ software rendering library for triangle meshes.

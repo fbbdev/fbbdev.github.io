@@ -5,10 +5,10 @@ category: cpp-libs
 ordinal: 200
 
 links:
-    - type: docs
-      url: https://github.com/fbbdev/plot#readme
-    - type: github
-      url: https://github.com/fbbdev/plot
+  - type: docs
+    url: https://github.com/fbbdev/plot#readme
+  - type: github
+    url: https://github.com/fbbdev/plot
 
 style: |
   #video {
@@ -24,6 +24,12 @@ style: |
     width: 100%;
     height: 100%;
   }
+
+thumbnail:
+  src: https://img.youtube.com/vi/7WG6xP5MIe4/0.jpg
+  alt: Example output of the plotting library in a terminal
+  width: 480
+  height: 360
 ---
 
 _plot_ is a header-only terminal plotting library for C++14 and later. It is

@@ -5,21 +5,21 @@ category: js-libs
 ordinal: 100
 
 links:
-    - type: package
-      url: https://www.npmjs.com/package/node-fastcgi
-    - type: docs
-      url: https://github.com/fbbdev/node-fastcgi#readme
-    - type: github
-      url: https://github.com/fbbdev/node-fastcgi
+  - type: package
+    url: https://www.npmjs.com/package/node-fastcgi
+  - type: docs
+    url: https://github.com/fbbdev/node-fastcgi#readme
+  - type: github
+    url: https://github.com/fbbdev/node-fastcgi
 
 style: |
-    h1 {
-        overflow-wrap: break-word;
-        hyphens: auto;
-        -ms-hyphens: auto;
-        -moz-hyphens: auto;
-        -webkit-hyphens: auto;
-    }
+  h1 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+  }
 ---
 
 _node-fastcgi_ is a drop-in replacement for node's http module (server only).

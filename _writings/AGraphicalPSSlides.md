@@ -1,14 +1,14 @@
 ---
 title: On the content of classical propositional proofs
 excerpt: |
-    Slides of my talk at the Logic Group seminar at Scuola Normale Superiore,
-    in Pisa, Italy (May 15th, 2023)
+  Slides of my talk at the Logic Group seminar at Scuola Normale Superiore,
+  in Pisa, Italy (May 15th, 2023)
 category: talks
 date: 20230515
 
 links:
-    - type: slides
-      url: /writings/downloads/AGraphicalPSSlides.pdf
+  - type: slides
+    url: /writings/downloads/AGraphicalPSSlides.pdf
 ---
 
 |**Authors:** | Fabio Massaioli |

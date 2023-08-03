@@ -6,36 +6,33 @@ author: Fabio Massaioli (fbbdev)
 description: fbbdev.it is the place for everything crossing my mind
 
 collections:
-    writings:
-        output: true
-        permalink: /writings/:path
-    projects:
-        output: true
-        permalink: /projects/:path
-    tools:
-        output: true
-        permalink: /tools/:path
+  writings:
+    output: true
+    permalink: /writings/:path
+  projects:
+    output: true
+    permalink: /projects/:path
+  tools:
+    output: true
+    permalink: /tools/:path
 
 defaults:
-    - scope:
-          path: ""
-          type: writings
-      values:
-          layout: writing
-    - scope:
-          path: ""
-          type: projects
-      values:
-          layout: item
-    - scope:
-          path: ""
-          type: tools
-      values:
-          layout: item
+  - scope:
+      path: ""
+      type: writings
+    values:
+      layout: writing
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: item
+  - scope:
+      path: ""
+      type: tools
+    values:
+      layout: item
 
 markdown: kramdown
 sass:
-    style: :compressed
-
-# gem:
-#    - octopress-debugger
+  style: :compressed

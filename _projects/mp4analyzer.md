@@ -5,19 +5,19 @@ category: js-libs
 ordinal: 200
 
 links:
-    - type: website
-      url: https://fbbdev.it/mp4analyzer.js
-    - type: github
-      url: https://github.com/fbbdev/mp4analyzer.js
+  - type: website
+    url: https://fbbdev.it/mp4analyzer.js
+  - type: github
+    url: https://github.com/fbbdev/mp4analyzer.js
 
 style: |
-    h1 {
-        overflow-wrap: break-word;
-        -ms-hyphens: auto;
-        -moz-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
-    }
+  h1 {
+    overflow-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 ---
 
 _mp4analyzer.js_ is a browser library for parsing mp4/mov files and extracting information.

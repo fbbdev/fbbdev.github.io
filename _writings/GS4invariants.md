@@ -1,16 +1,16 @@
 ---
 title: On the semantics of proofs in classical sequent calculus
 excerpt: |
-    Unpublished notes about a tentative approach to the denotational semantics
-    of classical sequent calculus
+  Unpublished notes about a tentative approach to the denotational semantics
+  of classical sequent calculus
 category: research
 date: 20230504
 
 links:
-    - type: pdf
-      url: /writings/downloads/GS4invariants.pdf
-    - type: arxiv
-      url: https://arxiv.org/abs/2307.16594
+  - type: pdf
+    url: /writings/downloads/GS4invariants.pdf
+  - type: arxiv
+    url: https://arxiv.org/abs/2307.16594
 ---
 
 |**Authors:** | Fabio Massaioli                                                                          |

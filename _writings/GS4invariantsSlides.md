@@ -1,14 +1,14 @@
 ---
 title: On the semantics of proofs in classical sequent calculus
 excerpt: |
-    Slides of my talk at the Logic seminar of the Department of Mathematics
-    at Roma Tre University, in Rome, Italy (June 16th, 2023)
+  Slides of my talk at the Logic seminar of the Department of Mathematics
+  at Roma Tre University, in Rome, Italy (June 16th, 2023)
 category: talks
 date: 20230616
 
 links:
-    - type: slides
-      url: /writings/downloads/GS4invariantsSlides.pdf
+  - type: slides
+    url: /writings/downloads/GS4invariantsSlides.pdf
 ---
 
 |**Authors:** | Fabio Massaioli |

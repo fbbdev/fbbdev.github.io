@@ -2,6 +2,11 @@
 layout: onesection
 title: "About me"
 excerpt: "Personal information and contact info"
+thumbnail:
+  src: /img/me/660.jpg
+  alt: A portrait of fbbdev
+  width: 660
+  height: 878
 ---
 
 <figure class="float-right" style="margin-bottom: 25px;">

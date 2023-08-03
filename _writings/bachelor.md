@@ -5,8 +5,8 @@ category: dissertations
 date: 20170307
 
 links:
-    - type: pdf
-      url: /writings/downloads/tesi_triennale.pdf
+  - type: pdf
+    url: /writings/downloads/tesi_triennale.pdf
 ---
 
 |**Authors:** | Fabio Massaioli |

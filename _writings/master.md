@@ -5,8 +5,8 @@ category: dissertations
 date: 20200714
 
 links:
-    - type: pdf
-      url: /writings/downloads/tesi_magistrale.pdf
+  - type: pdf
+    url: /writings/downloads/tesi_magistrale.pdf
 ---
 
 |**Authors:** | Fabio Massaioli |

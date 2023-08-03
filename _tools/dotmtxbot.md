@@ -3,12 +3,12 @@ title: Dot Matrix Bot
 excerpt: "A Telegram inline bot for generating dot matrix display GIFs"
 
 links:
-    - icon: ion-ios-paperplane-outline
-      title: Telegram bot
-      label: Telegram bot
-      url: https://t.me/dotmtxbot
-    - type: github
-      url: https://github.com/fbbdev/dotmtxbot
+  - icon: ion-ios-paperplane-outline
+    title: Telegram bot
+    label: Telegram bot
+    url: https://t.me/dotmtxbot
+  - type: github
+    url: https://github.com/fbbdev/dotmtxbot
 ---
 [_@dotmtxbot_](https://t.me/dotmtxbot) is a Telegram bot that can be invoked inline (that is,
 while typing a message, like _@gif_ and _@pic_) to generate scrolling dot matrix display GIFs
