@@ -1,14 +1,14 @@
-@mixin icon-size {
+@mixin icon-size($base: 25px) {
     i.ion {
-        font-size: 25px;
+        font-size: $base;
     }
 
     i.ion-ios-person-outline {
-        font-size: 30px;
+        font-size: $base + 5px;
     }
 
     i.ion-ios-copy-outline,
     i.ion-ios-filing-outline {
-        font-size: 27px;
+        font-size: $base + 2px;
     }
 }

@@ -18,6 +18,8 @@ input {
     border: 1px solid $fg;
     background: $bg;
 
+    font-size: inherit;
+
     &:hover {
         border-color: $link-color-hover;
     }
@@ -25,6 +27,6 @@ input {
 
 input[type=button], button, .button {
     @include button-shape;
-    @include icon-size;
+    @include icon-size(24px);
     font-family: $font;
 }
