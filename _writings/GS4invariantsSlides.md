@@ -11,6 +11,9 @@ links:
       url: /writings/downloads/GS4invariantsSlides.pdf
 ---
 
+|**Authors:** | Fabio Massaioli |
+|**Language:**| English         |
+
 These are the slides accompanying the talk I gave within the Logic seminar of the Department
 of Mathematics at Roma Tre University, in Rome, Italy, on June 16<sup>th</sup>, 2023. The
 content of the talk originated from some [unpublished notes](GS4invariants). It is essentially

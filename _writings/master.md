@@ -9,6 +9,12 @@ links:
       url: /writings/downloads/tesi_magistrale.pdf
 ---
 
+|**Authors:** | Fabio Massaioli |
+|**Language:**| Italian         |
+|**Pages:**   | viii+105        |
+
+This is my thesis for the Master's degree in Philosophy.
+
 ## Abstract
 
 This master's thesis (in Italian) explores various normalization procedures

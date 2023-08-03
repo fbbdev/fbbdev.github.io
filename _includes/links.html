@@ -24,13 +24,18 @@
         {% assign link_label = 'Web app' %}
         {% assign link_title = 'Open web application' %}
         {% assign link_target = '_blank' %}
+    {% when 'arxiv' %}
+        {% assign link_icon = 'ion-ios-filing-outline' %}
+        {% assign link_label = 'View on arXiv' %}
+        {% assign link_title = 'Visit pre-print page on arXiv.org' %}
+        {% assign link_target = '_blank' %}
     {% when 'pdf' %}
-        {% assign link_icon = 'ion-ios-book-outline' %}
+        {% assign link_icon = 'ion-ios-copy-outline' %}
         {% assign link_label = 'Download PDF' %}
         {% assign link_title = link_label %}
         {% assign link_target = '_blank' %}
     {% when 'slides' %}
-        {% assign link_icon = 'ion-ios-albums-outline' %}
+        {% assign link_icon = 'ion-ios-photos-outline' %}
         {% assign link_label = 'Download slides' %}
         {% assign link_title = link_label %}
         {% assign link_target = '_blank' %}

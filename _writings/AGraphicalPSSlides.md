@@ -11,6 +11,9 @@ links:
       url: /writings/downloads/AGraphicalPSSlides.pdf
 ---
 
+|**Authors:** | Fabio Massaioli |
+|**Language:**| English         |
+
 These are the slides accompanying the talk I gave within the Logic Group seminar at Scuola
 Normale Superiore in Pisa, Italy, on May 15<sup>th</sup>, 2023. They present some unpublished
 work (still in progress) about a graphical proof-system for classical logic (in the style

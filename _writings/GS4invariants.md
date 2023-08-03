@@ -9,7 +9,18 @@ date: 20230504
 links:
     - type: pdf
       url: /writings/downloads/GS4invariants.pdf
+    - type: arxiv
+      url: https://arxiv.org/abs/2307.16594
 ---
+
+|**Authors:** | Fabio Massaioli                                                                          |
+|**DOI:**     | [10.48550/arXiv.2307.16594](https://doi.org/10.48550/arXiv.2307.16594){:target="_blank"} |
+|**arXiv:**   | [arXiv:2307.16594](https://arxiv.org/abs/2307.16594){:target="_blank"}                   |
+|**Language:**| English                                                                                  |
+|**Pages:**   | 62                                                                                       |
+
+These are unpublished notes providing extended draft material for a forthcoming shorter
+and updated paper.
 
 ## Abstract
 

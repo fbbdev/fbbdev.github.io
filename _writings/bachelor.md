@@ -9,6 +9,12 @@ links:
       url: /writings/downloads/tesi_triennale.pdf
 ---
 
+|**Authors:** | Fabio Massaioli |
+|**Language:**| Italian         |
+|**Pages:**   | 74              |
+
+This is my undergraduate thesis for the Bachelor degree in Philosophy.
+
 ## Abstract
 
 It is often believed that christian thinkers, and especially medieval ones,
