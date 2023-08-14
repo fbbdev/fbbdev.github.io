@@ -26,7 +26,7 @@ It is a cherished part of my childhood and I am enormously grateful to George Mi
 [Softronics](https://www.softronix.com/) (author of the much more famous
 [MSW Logo](https://www.softronix.com/logo_downloads/)) for creating it and making it
 available online. I spent countless hours with this application, learning and building
-things. Judging from the many examples and tutorials available on the web, I am not alone.
+things. Judging from the many contraptions and tutorials available on the web, I am not alone.
 
 <figure>
   <img src="/img/mmlogic/logicex2.png">
