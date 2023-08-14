@@ -1,8 +1,7 @@
 ---
 title: On the semantics of proofs in classical sequent calculus
 excerpt: |
-  Unpublished notes about a tentative approach to the denotational semantics
-  of classical sequent calculus
+  Notes about a tentative approach to the denotational semantics of classical sequent calculus
 category: research
 date: 20230504
 
@@ -19,8 +18,9 @@ links:
 |**Language:**| English                                                                                  |
 |**Pages:**   | 62                                                                                       |
 
-These are unpublished notes providing extended draft material for a forthcoming shorter
-and updated paper.
+These pre-print (unpublished) notes providing extended draft material for a forthcoming
+shorter and updated paper. The [talk I gave at LC2023 in Milan](LC2023) is also based upon
+these notes.
 
 ## Abstract
 

@@ -1,10 +1,10 @@
 projects:
+  - id: apps
+    title: Applications
   - id: cpp-libs
     title: C++ Libraries
   - id: js-libs
     title: Javascript Libraries
-  - id: apps
-    title: Applications
   - id: docs
     title: Documentation
 

@@ -2,7 +2,7 @@
 title: Turing machine analyzer
 excerpt: "A visualizer and analyzer of Turing Machines, geared towards teachers and students of computer science"
 category: apps
-ordinal: 100
+ordinal: 200
 
 links:
   - type: application
