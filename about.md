@@ -84,6 +84,8 @@ I develop and maintain some open-source projects, and over the years I have made
 to projects by other people. Some of my own are listed [here](/projects), while others, as well
 as the list of contributions, are available on my [GitHub profile](https://github.com/fbbdev){:target="_blank"}.
 
+I am especially proud of [a major contribution](https://github.com/wailsapp/wails/pull/3468) to the upcoming [v3](https://v3alpha.wails.io/) of the beautiful [Wails](https://wails.io/) project, which provides lovers of the Go programming language with a comprehensive framework to create cross-platform, web-based Desktop applications. I implemented and currently contribute to the maintenance of the internal Go to JS binding generator, that allows seamless interoperation of JavaScript and Go code.
+
 I am currently the maintainer of [`node-fastcgi`](/projects/node-fastcgi), an [npm
 package](https://www.npmjs.com/package/node-fastcgi){:target="_blank"} supporting the
 development of FastCGI applications in [Node.js](https://nodejs.org){:target="_blank"}.
