@@ -12,6 +12,16 @@ links:
 ---
 I like clocks! And I like wasting my time!
 
+<figure>
+    <video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback
+            title="The digital clock transitioning from 22:59 to 23:00">
+        <source src="/img/clocks/hour.mp4" type="video/mp4">
+    </video>
+    <figcaption>
+        So satisfying!
+    </figcaption>
+</figure>
+
 So I made some clock faces:
 
   - [Digital clock with character morphing](https://clocks.fbbdev.it/orologiaDig/){:target="_blank"}
