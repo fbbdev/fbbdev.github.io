@@ -35,6 +35,11 @@ defaults:
       type: tools
     values:
       layout: item
+  - scope:
+      path: ""
+      type: random
+    values:
+      layout: item
 
 markdown: kramdown
 sass:
