@@ -48,3 +48,23 @@ stylesheet: item_index
     </article>
     {% endfor %}
 </section>
+
+<section>
+    <h2>Random</h2>
+    {% for random in site.random %}
+    <article>
+        {% if random.links %}
+        <aside>
+            {% assign link_class = 'circle' %}
+            {% for link in random.links %}
+                {% include links.html %}
+            {% endfor %}
+        </aside>
+        {% endif %}
+        <a href="{{ random.url }}">
+            <h3>{{ random.title }}</h3>
+            {{ random.excerpt }}
+        </a>
+    </article>
+    {% endfor %}
+</section>
