@@ -37,6 +37,18 @@ based on the same idea as the awesome [Drawille](https://github.com/asciimoo/dra
 and [UnicodePlots.jl](https://github.com/JuliaPlots/UnicodePlots.jl) libraries:
 using Unicode Braille characters to display complex graphics in any terminal.
 
+## Demo
+
+Here is a youtube video demonstrating the capabilities of this library. For code
+examples visit [the repository](https://github.com/fbbdev/plot/tree/master/examples)
+on GitHub.
+
+<figure id="video">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7WG6xP5MIe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</figure>
+
+## Project status
+
 This project is a work in progress. The architecture comprises a generic canvas
 API supporting the most common vector graphics commands (already implemented),
 and a planned plotting API for building complex visualizations. The canvas
@@ -51,13 +63,3 @@ language for data processing, and support for Braille characters in terminal
 fonts is generally spotty and unreliable.
 
 _plot_ is distributed under the open source [MIT license](https://github.com/fbbdev/plot/blob/master/LICENSE).
-
-## Demo
-
-Here is a youtube video demonstrating the capabilities of this library. For code
-examples visit [the repository](https://github.com/fbbdev/plot/tree/master/examples)
-on GitHub.
-
-<figure id="video">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7WG6xP5MIe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</figure>

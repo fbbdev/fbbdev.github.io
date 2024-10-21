@@ -6,7 +6,7 @@ ordinal: 200
 
 links:
   - type: application
-    url: https://fbbdev.it/turing/
+    url: https://fbbdev.it/turing/?view=3
   - type: docs
     url: https://github.com/fbbdev/turing#readme
   - type: github
@@ -22,8 +22,8 @@ thumbnail:
 This is a browser-based application providing a graphical environment in which
 one may design, simulate and analyze the structure and behaviour of
 [Turing machines](https://en.wikipedia.org/wiki/Turing_machine). A fully
-functional build is available [here](https://fbbdev.it/turing/). Useful
-information and examples can be found in the
+functional build is available [here](https://fbbdev.it/turing/?view=3).
+Useful information and examples can be found in the
 [README](https://github.com/fbbdev/turing#readme) file on GitHub.
 
 <figure>
